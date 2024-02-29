@@ -1,0 +1,2992 @@
+{
+    "waypoint-following_auv_initialpoint_t7point_ssssonar1_ssssonar0": {
+        "name": "waypoint-following",
+        "args": [
+            "auv",
+            "initialpoint",
+            "t7point",
+            "ssssonar1",
+            "ssssonar0"
+        ],
+        "pre": {},
+        "per": {
+            "at": [
+                "auv",
+                "initialpoint"
+            ]
+        },
+        "add": {},
+        "del": {}
+    },
+    "obstacle-avoidance_auv_t7point_ssssonar0": {
+        "name": "obstacle-avoidance",
+        "args": [
+            "auv",
+            "t7point",
+            "ssssonar0"
+        ],
+        "pre": {},
+        "per": {
+            "at": [
+                "auv",
+                "t7point"
+            ]
+        },
+        "add": {},
+        "del": {}
+    },
+    "waypoint-following_auv_t7point_t8point_ssssonar1_ssssonar0": {
+        "name": "waypoint-following",
+        "args": [
+            "auv",
+            "t7point",
+            "t8point",
+            "ssssonar1",
+            "ssssonar0"
+        ],
+        "pre": {},
+        "per": {
+            "at": [
+                "auv",
+                "t7point"
+            ]
+        },
+        "add": {},
+        "del": {}
+    },
+    "obstacle-avoidance_auv_t8point_ssssonar0": {
+        "name": "obstacle-avoidance",
+        "args": [
+            "auv",
+            "t8point",
+            "ssssonar0"
+        ],
+        "pre": {},
+        "per": {
+            "at": [
+                "auv",
+                "t8point"
+            ]
+        },
+        "add": {},
+        "del": {}
+    },
+    "waypoint-following_auv_t8point_t9point_ssssonar1_ssssonar0": {
+        "name": "waypoint-following",
+        "args": [
+            "auv",
+            "t8point",
+            "t9point",
+            "ssssonar1",
+            "ssssonar0"
+        ],
+        "pre": {},
+        "per": {
+            "at": [
+                "auv",
+                "t8point"
+            ]
+        },
+        "add": {},
+        "del": {}
+    },
+    "obstacle-avoidance_auv_t9point_ssssonar0": {
+        "name": "obstacle-avoidance",
+        "args": [
+            "auv",
+            "t9point",
+            "ssssonar0"
+        ],
+        "pre": {},
+        "per": {
+            "at": [
+                "auv",
+                "t9point"
+            ]
+        },
+        "add": {},
+        "del": {}
+    },
+    "waypoint-following_auv_t9point_t10point_ssssonar1_ssssonar0": {
+        "name": "waypoint-following",
+        "args": [
+            "auv",
+            "t9point",
+            "t10point",
+            "ssssonar1",
+            "ssssonar0"
+        ],
+        "pre": {},
+        "per": {
+            "at": [
+                "auv",
+                "t9point"
+            ]
+        },
+        "add": {},
+        "del": {}
+    },
+    "obstacle-avoidance_auv_t10point_ssssonar0": {
+        "name": "obstacle-avoidance",
+        "args": [
+            "auv",
+            "t10point",
+            "ssssonar0"
+        ],
+        "pre": {},
+        "per": {
+            "at": [
+                "auv",
+                "t10point"
+            ]
+        },
+        "add": {},
+        "del": {}
+    },
+    "waypoint-following_auv_t10point_t11point_ssssonar1_ssssonar0": {
+        "name": "waypoint-following",
+        "args": [
+            "auv",
+            "t10point",
+            "t11point",
+            "ssssonar1",
+            "ssssonar0"
+        ],
+        "pre": {},
+        "per": {
+            "at": [
+                "auv",
+                "t10point"
+            ]
+        },
+        "add": {},
+        "del": {}
+    },
+    "obstacle-avoidance_auv_t11point_ssssonar0": {
+        "name": "obstacle-avoidance",
+        "args": [
+            "auv",
+            "t11point",
+            "ssssonar0"
+        ],
+        "pre": {},
+        "per": {
+            "at": [
+                "auv",
+                "t11point"
+            ]
+        },
+        "add": {},
+        "del": {}
+    },
+    "waypoint-following_auv_t11point_t12point_ssssonar1_ssssonar0": {
+        "name": "waypoint-following",
+        "args": [
+            "auv",
+            "t11point",
+            "t12point",
+            "ssssonar1",
+            "ssssonar0"
+        ],
+        "pre": {},
+        "per": {
+            "at": [
+                "auv",
+                "t11point"
+            ]
+        },
+        "add": {},
+        "del": {}
+    },
+    "obstacle-avoidance_auv_t12point_ssssonar0": {
+        "name": "obstacle-avoidance",
+        "args": [
+            "auv",
+            "t12point",
+            "ssssonar0"
+        ],
+        "pre": {},
+        "per": {
+            "at": [
+                "auv",
+                "t12point"
+            ]
+        },
+        "add": {},
+        "del": {}
+    },
+    "waypoint-following_auv_t12point_t16point_ssssonar1_ssssonar0": {
+        "name": "waypoint-following",
+        "args": [
+            "auv",
+            "t12point",
+            "t16point",
+            "ssssonar1",
+            "ssssonar0"
+        ],
+        "pre": {},
+        "per": {
+            "at": [
+                "auv",
+                "t12point"
+            ]
+        },
+        "add": {},
+        "del": {}
+    },
+    "obstacle-avoidance_auv_t16point_ssssonar0": {
+        "name": "obstacle-avoidance",
+        "args": [
+            "auv",
+            "t16point",
+            "ssssonar0"
+        ],
+        "pre": {},
+        "per": {
+            "at": [
+                "auv",
+                "t16point"
+            ]
+        },
+        "add": {},
+        "del": {}
+    },
+    "waypoint-following_auv_t16point_t17point_ssssonar1_ssssonar0": {
+        "name": "waypoint-following",
+        "args": [
+            "auv",
+            "t16point",
+            "t17point",
+            "ssssonar1",
+            "ssssonar0"
+        ],
+        "pre": {},
+        "per": {
+            "at": [
+                "auv",
+                "t16point"
+            ]
+        },
+        "add": {},
+        "del": {}
+    },
+    "obstacle-avoidance_auv_t17point_ssssonar0": {
+        "name": "obstacle-avoidance",
+        "args": [
+            "auv",
+            "t17point",
+            "ssssonar0"
+        ],
+        "pre": {},
+        "per": {
+            "at": [
+                "auv",
+                "t17point"
+            ]
+        },
+        "add": {},
+        "del": {}
+    },
+    "waypoint-following_auv_t17point_t18point_ssssonar1_ssssonar0": {
+        "name": "waypoint-following",
+        "args": [
+            "auv",
+            "t17point",
+            "t18point",
+            "ssssonar1",
+            "ssssonar0"
+        ],
+        "pre": {},
+        "per": {
+            "at": [
+                "auv",
+                "t17point"
+            ]
+        },
+        "add": {},
+        "del": {}
+    },
+    "obstacle-avoidance_auv_t18point_ssssonar0": {
+        "name": "obstacle-avoidance",
+        "args": [
+            "auv",
+            "t18point",
+            "ssssonar0"
+        ],
+        "pre": {},
+        "per": {
+            "at": [
+                "auv",
+                "t18point"
+            ]
+        },
+        "add": {},
+        "del": {}
+    },
+    "waypoint-following_auv_t18point_t19point_ssssonar1_ssssonar0": {
+        "name": "waypoint-following",
+        "args": [
+            "auv",
+            "t18point",
+            "t19point",
+            "ssssonar1",
+            "ssssonar0"
+        ],
+        "pre": {},
+        "per": {
+            "at": [
+                "auv",
+                "t18point"
+            ]
+        },
+        "add": {},
+        "del": {}
+    },
+    "obstacle-avoidance_auv_t19point_ssssonar0": {
+        "name": "obstacle-avoidance",
+        "args": [
+            "auv",
+            "t19point",
+            "ssssonar0"
+        ],
+        "pre": {},
+        "per": {
+            "at": [
+                "auv",
+                "t19point"
+            ]
+        },
+        "add": {},
+        "del": {}
+    },
+    "waypoint-following_auv_t19point_t20point_ssssonar1_ssssonar0": {
+        "name": "waypoint-following",
+        "args": [
+            "auv",
+            "t19point",
+            "t20point",
+            "ssssonar1",
+            "ssssonar0"
+        ],
+        "pre": {},
+        "per": {
+            "at": [
+                "auv",
+                "t19point"
+            ]
+        },
+        "add": {},
+        "del": {}
+    },
+    "obstacle-avoidance_auv_t20point_ssssonar0": {
+        "name": "obstacle-avoidance",
+        "args": [
+            "auv",
+            "t20point",
+            "ssssonar0"
+        ],
+        "pre": {},
+        "per": {
+            "at": [
+                "auv",
+                "t20point"
+            ]
+        },
+        "add": {},
+        "del": {}
+    },
+    "waypoint-following_auv_t20point_t21point_ssssonar1_ssssonar0": {
+        "name": "waypoint-following",
+        "args": [
+            "auv",
+            "t20point",
+            "t21point",
+            "ssssonar1",
+            "ssssonar0"
+        ],
+        "pre": {},
+        "per": {
+            "at": [
+                "auv",
+                "t20point"
+            ]
+        },
+        "add": {},
+        "del": {}
+    },
+    "obstacle-avoidance_auv_t21point_ssssonar0": {
+        "name": "obstacle-avoidance",
+        "args": [
+            "auv",
+            "t21point",
+            "ssssonar0"
+        ],
+        "pre": {},
+        "per": {
+            "at": [
+                "auv",
+                "t21point"
+            ]
+        },
+        "add": {},
+        "del": {}
+    },
+    "waypoint-following_auv_t21point_t22point_ssssonar1_ssssonar0": {
+        "name": "waypoint-following",
+        "args": [
+            "auv",
+            "t21point",
+            "t22point",
+            "ssssonar1",
+            "ssssonar0"
+        ],
+        "pre": {},
+        "per": {
+            "at": [
+                "auv",
+                "t21point"
+            ]
+        },
+        "add": {},
+        "del": {}
+    },
+    "obstacle-avoidance_auv_t22point_ssssonar0": {
+        "name": "obstacle-avoidance",
+        "args": [
+            "auv",
+            "t22point",
+            "ssssonar0"
+        ],
+        "pre": {},
+        "per": {
+            "at": [
+                "auv",
+                "t22point"
+            ]
+        },
+        "add": {},
+        "del": {}
+    },
+    "waypoint-following_auv_t22point_t23point_ssssonar1_ssssonar0": {
+        "name": "waypoint-following",
+        "args": [
+            "auv",
+            "t22point",
+            "t23point",
+            "ssssonar1",
+            "ssssonar0"
+        ],
+        "pre": {},
+        "per": {
+            "at": [
+                "auv",
+                "t22point"
+            ]
+        },
+        "add": {},
+        "del": {}
+    },
+    "obstacle-avoidance_auv_t23point_ssssonar0": {
+        "name": "obstacle-avoidance",
+        "args": [
+            "auv",
+            "t23point",
+            "ssssonar0"
+        ],
+        "pre": {},
+        "per": {
+            "at": [
+                "auv",
+                "t23point"
+            ]
+        },
+        "add": {},
+        "del": {}
+    },
+    "waypoint-following_auv_t23point_t24point_ssssonar1_ssssonar0": {
+        "name": "waypoint-following",
+        "args": [
+            "auv",
+            "t23point",
+            "t24point",
+            "ssssonar1",
+            "ssssonar0"
+        ],
+        "pre": {},
+        "per": {
+            "at": [
+                "auv",
+                "t23point"
+            ]
+        },
+        "add": {},
+        "del": {}
+    },
+    "obstacle-avoidance_auv_t24point_ssssonar0": {
+        "name": "obstacle-avoidance",
+        "args": [
+            "auv",
+            "t24point",
+            "ssssonar0"
+        ],
+        "pre": {},
+        "per": {
+            "at": [
+                "auv",
+                "t24point"
+            ]
+        },
+        "add": {},
+        "del": {}
+    },
+    "waypoint-following_auv_t24point_t25point_ssssonar1_ssssonar0": {
+        "name": "waypoint-following",
+        "args": [
+            "auv",
+            "t24point",
+            "t25point",
+            "ssssonar1",
+            "ssssonar0"
+        ],
+        "pre": {},
+        "per": {
+            "at": [
+                "auv",
+                "t24point"
+            ]
+        },
+        "add": {},
+        "del": {}
+    },
+    "obstacle-avoidance_auv_t25point_ssssonar0": {
+        "name": "obstacle-avoidance",
+        "args": [
+            "auv",
+            "t25point",
+            "ssssonar0"
+        ],
+        "pre": {},
+        "per": {
+            "at": [
+                "auv",
+                "t25point"
+            ]
+        },
+        "add": {},
+        "del": {}
+    },
+    "waypoint-following_auv_t25point_t26point_ssssonar1_ssssonar0": {
+        "name": "waypoint-following",
+        "args": [
+            "auv",
+            "t25point",
+            "t26point",
+            "ssssonar1",
+            "ssssonar0"
+        ],
+        "pre": {},
+        "per": {
+            "at": [
+                "auv",
+                "t25point"
+            ]
+        },
+        "add": {},
+        "del": {}
+    },
+    "obstacle-avoidance_auv_t26point_ssssonar0": {
+        "name": "obstacle-avoidance",
+        "args": [
+            "auv",
+            "t26point",
+            "ssssonar0"
+        ],
+        "pre": {},
+        "per": {
+            "at": [
+                "auv",
+                "t26point"
+            ]
+        },
+        "add": {},
+        "del": {}
+    },
+    "waypoint-following_auv_t26point_t27point_ssssonar1_ssssonar0": {
+        "name": "waypoint-following",
+        "args": [
+            "auv",
+            "t26point",
+            "t27point",
+            "ssssonar1",
+            "ssssonar0"
+        ],
+        "pre": {},
+        "per": {
+            "at": [
+                "auv",
+                "t26point"
+            ]
+        },
+        "add": {},
+        "del": {}
+    },
+    "obstacle-avoidance_auv_t27point_ssssonar0": {
+        "name": "obstacle-avoidance",
+        "args": [
+            "auv",
+            "t27point",
+            "ssssonar0"
+        ],
+        "pre": {},
+        "per": {
+            "at": [
+                "auv",
+                "t27point"
+            ]
+        },
+        "add": {},
+        "del": {}
+    },
+    "waypoint-following_auv_t27point_t28point_ssssonar1_ssssonar0": {
+        "name": "waypoint-following",
+        "args": [
+            "auv",
+            "t27point",
+            "t28point",
+            "ssssonar1",
+            "ssssonar0"
+        ],
+        "pre": {},
+        "per": {
+            "at": [
+                "auv",
+                "t27point"
+            ]
+        },
+        "add": {},
+        "del": {}
+    },
+    "obstacle-avoidance_auv_t28point_ssssonar0": {
+        "name": "obstacle-avoidance",
+        "args": [
+            "auv",
+            "t28point",
+            "ssssonar0"
+        ],
+        "pre": {},
+        "per": {
+            "at": [
+                "auv",
+                "t28point"
+            ]
+        },
+        "add": {},
+        "del": {}
+    },
+    "waypoint-following_auv_t28point_t29point_ssssonar1_ssssonar0": {
+        "name": "waypoint-following",
+        "args": [
+            "auv",
+            "t28point",
+            "t29point",
+            "ssssonar1",
+            "ssssonar0"
+        ],
+        "pre": {},
+        "per": {
+            "at": [
+                "auv",
+                "t28point"
+            ]
+        },
+        "add": {},
+        "del": {}
+    },
+    "obstacle-avoidance_auv_t29point_ssssonar0": {
+        "name": "obstacle-avoidance",
+        "args": [
+            "auv",
+            "t29point",
+            "ssssonar0"
+        ],
+        "pre": {},
+        "per": {
+            "at": [
+                "auv",
+                "t29point"
+            ]
+        },
+        "add": {},
+        "del": {}
+    },
+    "waypoint-following_auv_t29point_t30point_ssssonar1_ssssonar0": {
+        "name": "waypoint-following",
+        "args": [
+            "auv",
+            "t29point",
+            "t30point",
+            "ssssonar1",
+            "ssssonar0"
+        ],
+        "pre": {},
+        "per": {
+            "at": [
+                "auv",
+                "t29point"
+            ]
+        },
+        "add": {},
+        "del": {}
+    },
+    "obstacle-avoidance_auv_t30point_ssssonar0": {
+        "name": "obstacle-avoidance",
+        "args": [
+            "auv",
+            "t30point",
+            "ssssonar0"
+        ],
+        "pre": {},
+        "per": {
+            "at": [
+                "auv",
+                "t30point"
+            ]
+        },
+        "add": {},
+        "del": {}
+    },
+    "waypoint-following_auv_t30point_t31point_ssssonar1_ssssonar0": {
+        "name": "waypoint-following",
+        "args": [
+            "auv",
+            "t30point",
+            "t31point",
+            "ssssonar1",
+            "ssssonar0"
+        ],
+        "pre": {},
+        "per": {
+            "at": [
+                "auv",
+                "t30point"
+            ]
+        },
+        "add": {},
+        "del": {}
+    },
+    "obstacle-avoidance_auv_t31point_ssssonar0": {
+        "name": "obstacle-avoidance",
+        "args": [
+            "auv",
+            "t31point",
+            "ssssonar0"
+        ],
+        "pre": {},
+        "per": {
+            "at": [
+                "auv",
+                "t31point"
+            ]
+        },
+        "add": {},
+        "del": {}
+    },
+    "waypoint-following_auv_t31point_t32point_ssssonar1_ssssonar0": {
+        "name": "waypoint-following",
+        "args": [
+            "auv",
+            "t31point",
+            "t32point",
+            "ssssonar1",
+            "ssssonar0"
+        ],
+        "pre": {},
+        "per": {
+            "at": [
+                "auv",
+                "t31point"
+            ]
+        },
+        "add": {},
+        "del": {}
+    },
+    "obstacle-avoidance_auv_t32point_ssssonar0": {
+        "name": "obstacle-avoidance",
+        "args": [
+            "auv",
+            "t32point",
+            "ssssonar0"
+        ],
+        "pre": {},
+        "per": {
+            "at": [
+                "auv",
+                "t32point"
+            ]
+        },
+        "add": {},
+        "del": {}
+    },
+    "waypoint-following_auv_t32point_t33point_ssssonar1_ssssonar0": {
+        "name": "waypoint-following",
+        "args": [
+            "auv",
+            "t32point",
+            "t33point",
+            "ssssonar1",
+            "ssssonar0"
+        ],
+        "pre": {},
+        "per": {
+            "at": [
+                "auv",
+                "t32point"
+            ]
+        },
+        "add": {},
+        "del": {}
+    },
+    "obstacle-avoidance_auv_t33point_ssssonar0": {
+        "name": "obstacle-avoidance",
+        "args": [
+            "auv",
+            "t33point",
+            "ssssonar0"
+        ],
+        "pre": {},
+        "per": {
+            "at": [
+                "auv",
+                "t33point"
+            ]
+        },
+        "add": {},
+        "del": {}
+    },
+    "waypoint-following_auv_t33point_t34point_ssssonar1_ssssonar0": {
+        "name": "waypoint-following",
+        "args": [
+            "auv",
+            "t33point",
+            "t34point",
+            "ssssonar1",
+            "ssssonar0"
+        ],
+        "pre": {},
+        "per": {
+            "at": [
+                "auv",
+                "t33point"
+            ]
+        },
+        "add": {},
+        "del": {}
+    },
+    "obstacle-avoidance_auv_t34point_ssssonar0": {
+        "name": "obstacle-avoidance",
+        "args": [
+            "auv",
+            "t34point",
+            "ssssonar0"
+        ],
+        "pre": {},
+        "per": {
+            "at": [
+                "auv",
+                "t34point"
+            ]
+        },
+        "add": {},
+        "del": {}
+    },
+    "waypoint-following_auv_t34point_t35point_ssssonar1_ssssonar0": {
+        "name": "waypoint-following",
+        "args": [
+            "auv",
+            "t34point",
+            "t35point",
+            "ssssonar1",
+            "ssssonar0"
+        ],
+        "pre": {},
+        "per": {
+            "at": [
+                "auv",
+                "t34point"
+            ]
+        },
+        "add": {},
+        "del": {}
+    },
+    "obstacle-avoidance_auv_t35point_ssssonar0": {
+        "name": "obstacle-avoidance",
+        "args": [
+            "auv",
+            "t35point",
+            "ssssonar0"
+        ],
+        "pre": {},
+        "per": {
+            "at": [
+                "auv",
+                "t35point"
+            ]
+        },
+        "add": {},
+        "del": {}
+    },
+    "waypoint-following_auv_t35point_t36point_ssssonar1_ssssonar0": {
+        "name": "waypoint-following",
+        "args": [
+            "auv",
+            "t35point",
+            "t36point",
+            "ssssonar1",
+            "ssssonar0"
+        ],
+        "pre": {},
+        "per": {
+            "at": [
+                "auv",
+                "t35point"
+            ]
+        },
+        "add": {},
+        "del": {}
+    },
+    "obstacle-avoidance_auv_t36point_ssssonar0": {
+        "name": "obstacle-avoidance",
+        "args": [
+            "auv",
+            "t36point",
+            "ssssonar0"
+        ],
+        "pre": {},
+        "per": {
+            "at": [
+                "auv",
+                "t36point"
+            ]
+        },
+        "add": {},
+        "del": {}
+    },
+    "waypoint-following_auv_t36point_t37point_ssssonar1_ssssonar0": {
+        "name": "waypoint-following",
+        "args": [
+            "auv",
+            "t36point",
+            "t37point",
+            "ssssonar1",
+            "ssssonar0"
+        ],
+        "pre": {},
+        "per": {
+            "at": [
+                "auv",
+                "t36point"
+            ]
+        },
+        "add": {},
+        "del": {}
+    },
+    "obstacle-avoidance_auv_t37point_ssssonar0": {
+        "name": "obstacle-avoidance",
+        "args": [
+            "auv",
+            "t37point",
+            "ssssonar0"
+        ],
+        "pre": {},
+        "per": {
+            "at": [
+                "auv",
+                "t37point"
+            ]
+        },
+        "add": {},
+        "del": {}
+    },
+    "waypoint-following_auv_t37point_t38point_ssssonar1_ssssonar0": {
+        "name": "waypoint-following",
+        "args": [
+            "auv",
+            "t37point",
+            "t38point",
+            "ssssonar1",
+            "ssssonar0"
+        ],
+        "pre": {},
+        "per": {
+            "at": [
+                "auv",
+                "t37point"
+            ]
+        },
+        "add": {},
+        "del": {}
+    },
+    "obstacle-avoidance_auv_t38point_ssssonar0": {
+        "name": "obstacle-avoidance",
+        "args": [
+            "auv",
+            "t38point",
+            "ssssonar0"
+        ],
+        "pre": {},
+        "per": {
+            "at": [
+                "auv",
+                "t38point"
+            ]
+        },
+        "add": {},
+        "del": {}
+    },
+    "waypoint-following_auv_t38point_t39point_ssssonar1_ssssonar0": {
+        "name": "waypoint-following",
+        "args": [
+            "auv",
+            "t38point",
+            "t39point",
+            "ssssonar1",
+            "ssssonar0"
+        ],
+        "pre": {},
+        "per": {
+            "at": [
+                "auv",
+                "t38point"
+            ]
+        },
+        "add": {},
+        "del": {}
+    },
+    "obstacle-avoidance_auv_t39point_ssssonar0": {
+        "name": "obstacle-avoidance",
+        "args": [
+            "auv",
+            "t39point",
+            "ssssonar0"
+        ],
+        "pre": {},
+        "per": {
+            "at": [
+                "auv",
+                "t39point"
+            ]
+        },
+        "add": {},
+        "del": {}
+    },
+    "waypoint-following_auv_t39point_t40point_ssssonar1_ssssonar0": {
+        "name": "waypoint-following",
+        "args": [
+            "auv",
+            "t39point",
+            "t40point",
+            "ssssonar1",
+            "ssssonar0"
+        ],
+        "pre": {},
+        "per": {
+            "at": [
+                "auv",
+                "t39point"
+            ]
+        },
+        "add": {},
+        "del": {}
+    },
+    "obstacle-avoidance_auv_t40point_ssssonar0": {
+        "name": "obstacle-avoidance",
+        "args": [
+            "auv",
+            "t40point",
+            "ssssonar0"
+        ],
+        "pre": {},
+        "per": {
+            "at": [
+                "auv",
+                "t40point"
+            ]
+        },
+        "add": {},
+        "del": {}
+    },
+    "waypoint-following_auv_t40point_t41point_ssssonar1_ssssonar0": {
+        "name": "waypoint-following",
+        "args": [
+            "auv",
+            "t40point",
+            "t41point",
+            "ssssonar1",
+            "ssssonar0"
+        ],
+        "pre": {},
+        "per": {
+            "at": [
+                "auv",
+                "t40point"
+            ]
+        },
+        "add": {},
+        "del": {}
+    },
+    "obstacle-avoidance_auv_t41point_ssssonar0": {
+        "name": "obstacle-avoidance",
+        "args": [
+            "auv",
+            "t41point",
+            "ssssonar0"
+        ],
+        "pre": {},
+        "per": {
+            "at": [
+                "auv",
+                "t41point"
+            ]
+        },
+        "add": {},
+        "del": {}
+    },
+    "waypoint-following_auv_t41point_t42point_ssssonar1_ssssonar0": {
+        "name": "waypoint-following",
+        "args": [
+            "auv",
+            "t41point",
+            "t42point",
+            "ssssonar1",
+            "ssssonar0"
+        ],
+        "pre": {},
+        "per": {
+            "at": [
+                "auv",
+                "t41point"
+            ]
+        },
+        "add": {},
+        "del": {}
+    },
+    "obstacle-avoidance_auv_t42point_ssssonar0": {
+        "name": "obstacle-avoidance",
+        "args": [
+            "auv",
+            "t42point",
+            "ssssonar0"
+        ],
+        "pre": {},
+        "per": {
+            "at": [
+                "auv",
+                "t42point"
+            ]
+        },
+        "add": {},
+        "del": {}
+    },
+    "waypoint-following_auv_t42point_t43point_ssssonar1_ssssonar0": {
+        "name": "waypoint-following",
+        "args": [
+            "auv",
+            "t42point",
+            "t43point",
+            "ssssonar1",
+            "ssssonar0"
+        ],
+        "pre": {},
+        "per": {
+            "at": [
+                "auv",
+                "t42point"
+            ]
+        },
+        "add": {},
+        "del": {}
+    },
+    "obstacle-avoidance_auv_t43point_ssssonar0": {
+        "name": "obstacle-avoidance",
+        "args": [
+            "auv",
+            "t43point",
+            "ssssonar0"
+        ],
+        "pre": {},
+        "per": {
+            "at": [
+                "auv",
+                "t43point"
+            ]
+        },
+        "add": {},
+        "del": {}
+    },
+    "waypoint-following_auv_t43point_t44point_ssssonar1_ssssonar0": {
+        "name": "waypoint-following",
+        "args": [
+            "auv",
+            "t43point",
+            "t44point",
+            "ssssonar1",
+            "ssssonar0"
+        ],
+        "pre": {},
+        "per": {
+            "at": [
+                "auv",
+                "t43point"
+            ]
+        },
+        "add": {},
+        "del": {}
+    },
+    "obstacle-avoidance_auv_t44point_ssssonar0": {
+        "name": "obstacle-avoidance",
+        "args": [
+            "auv",
+            "t44point",
+            "ssssonar0"
+        ],
+        "pre": {},
+        "per": {
+            "at": [
+                "auv",
+                "t44point"
+            ]
+        },
+        "add": {},
+        "del": {}
+    },
+    "waypoint-following_auv_t44point_t45point_ssssonar1_ssssonar0": {
+        "name": "waypoint-following",
+        "args": [
+            "auv",
+            "t44point",
+            "t45point",
+            "ssssonar1",
+            "ssssonar0"
+        ],
+        "pre": {},
+        "per": {
+            "at": [
+                "auv",
+                "t44point"
+            ]
+        },
+        "add": {},
+        "del": {}
+    },
+    "obstacle-avoidance_auv_t45point_ssssonar0": {
+        "name": "obstacle-avoidance",
+        "args": [
+            "auv",
+            "t45point",
+            "ssssonar0"
+        ],
+        "pre": {},
+        "per": {
+            "at": [
+                "auv",
+                "t45point"
+            ]
+        },
+        "add": {},
+        "del": {}
+    },
+    "waypoint-following_auv_t45point_t46point_ssssonar1_ssssonar0": {
+        "name": "waypoint-following",
+        "args": [
+            "auv",
+            "t45point",
+            "t46point",
+            "ssssonar1",
+            "ssssonar0"
+        ],
+        "pre": {},
+        "per": {
+            "at": [
+                "auv",
+                "t45point"
+            ]
+        },
+        "add": {},
+        "del": {}
+    },
+    "obstacle-avoidance_auv_t46point_ssssonar0": {
+        "name": "obstacle-avoidance",
+        "args": [
+            "auv",
+            "t46point",
+            "ssssonar0"
+        ],
+        "pre": {},
+        "per": {
+            "at": [
+                "auv",
+                "t46point"
+            ]
+        },
+        "add": {},
+        "del": {}
+    },
+    "waypoint-following_auv_t46point_t47point_ssssonar1_ssssonar0": {
+        "name": "waypoint-following",
+        "args": [
+            "auv",
+            "t46point",
+            "t47point",
+            "ssssonar1",
+            "ssssonar0"
+        ],
+        "pre": {},
+        "per": {
+            "at": [
+                "auv",
+                "t46point"
+            ]
+        },
+        "add": {},
+        "del": {}
+    },
+    "obstacle-avoidance_auv_t47point_ssssonar0": {
+        "name": "obstacle-avoidance",
+        "args": [
+            "auv",
+            "t47point",
+            "ssssonar0"
+        ],
+        "pre": {},
+        "per": {
+            "at": [
+                "auv",
+                "t47point"
+            ]
+        },
+        "add": {},
+        "del": {}
+    },
+    "waypoint-following_auv_t47point_t48point_ssssonar1_ssssonar0": {
+        "name": "waypoint-following",
+        "args": [
+            "auv",
+            "t47point",
+            "t48point",
+            "ssssonar1",
+            "ssssonar0"
+        ],
+        "pre": {},
+        "per": {
+            "at": [
+                "auv",
+                "t47point"
+            ]
+        },
+        "add": {},
+        "del": {}
+    },
+    "obstacle-avoidance_auv_t48point_ssssonar0": {
+        "name": "obstacle-avoidance",
+        "args": [
+            "auv",
+            "t48point",
+            "ssssonar0"
+        ],
+        "pre": {},
+        "per": {
+            "at": [
+                "auv",
+                "t48point"
+            ]
+        },
+        "add": {},
+        "del": {}
+    },
+    "waypoint-following_auv_t48point_t49point_ssssonar1_ssssonar0": {
+        "name": "waypoint-following",
+        "args": [
+            "auv",
+            "t48point",
+            "t49point",
+            "ssssonar1",
+            "ssssonar0"
+        ],
+        "pre": {},
+        "per": {
+            "at": [
+                "auv",
+                "t48point"
+            ]
+        },
+        "add": {},
+        "del": {}
+    },
+    "obstacle-avoidance_auv_t49point_ssssonar0": {
+        "name": "obstacle-avoidance",
+        "args": [
+            "auv",
+            "t49point",
+            "ssssonar0"
+        ],
+        "pre": {},
+        "per": {
+            "at": [
+                "auv",
+                "t49point"
+            ]
+        },
+        "add": {},
+        "del": {}
+    },
+    "waypoint-following_auv_t49point_t50point_ssssonar1_ssssonar0": {
+        "name": "waypoint-following",
+        "args": [
+            "auv",
+            "t49point",
+            "t50point",
+            "ssssonar1",
+            "ssssonar0"
+        ],
+        "pre": {},
+        "per": {
+            "at": [
+                "auv",
+                "t49point"
+            ]
+        },
+        "add": {},
+        "del": {}
+    },
+    "obstacle-avoidance_auv_t50point_ssssonar0": {
+        "name": "obstacle-avoidance",
+        "args": [
+            "auv",
+            "t50point",
+            "ssssonar0"
+        ],
+        "pre": {},
+        "per": {
+            "at": [
+                "auv",
+                "t50point"
+            ]
+        },
+        "add": {},
+        "del": {}
+    },
+    "waypoint-following_auv_t50point_t51point_ssssonar1_ssssonar0": {
+        "name": "waypoint-following",
+        "args": [
+            "auv",
+            "t50point",
+            "t51point",
+            "ssssonar1",
+            "ssssonar0"
+        ],
+        "pre": {},
+        "per": {
+            "at": [
+                "auv",
+                "t50point"
+            ]
+        },
+        "add": {},
+        "del": {}
+    },
+    "obstacle-avoidance_auv_t51point_ssssonar0": {
+        "name": "obstacle-avoidance",
+        "args": [
+            "auv",
+            "t51point",
+            "ssssonar0"
+        ],
+        "pre": {},
+        "per": {
+            "at": [
+                "auv",
+                "t51point"
+            ]
+        },
+        "add": {},
+        "del": {}
+    },
+    "waypoint-following_auv_t51point_t52point_ssssonar1_ssssonar0": {
+        "name": "waypoint-following",
+        "args": [
+            "auv",
+            "t51point",
+            "t52point",
+            "ssssonar1",
+            "ssssonar0"
+        ],
+        "pre": {},
+        "per": {
+            "at": [
+                "auv",
+                "t51point"
+            ]
+        },
+        "add": {},
+        "del": {}
+    },
+    "obstacle-avoidance_auv_t52point_ssssonar0": {
+        "name": "obstacle-avoidance",
+        "args": [
+            "auv",
+            "t52point",
+            "ssssonar0"
+        ],
+        "pre": {},
+        "per": {
+            "at": [
+                "auv",
+                "t52point"
+            ]
+        },
+        "add": {},
+        "del": {}
+    },
+    "waypoint-following_auv_t52point_t53point_ssssonar1_ssssonar0": {
+        "name": "waypoint-following",
+        "args": [
+            "auv",
+            "t52point",
+            "t53point",
+            "ssssonar1",
+            "ssssonar0"
+        ],
+        "pre": {},
+        "per": {
+            "at": [
+                "auv",
+                "t52point"
+            ]
+        },
+        "add": {},
+        "del": {}
+    },
+    "obstacle-avoidance_auv_t53point_ssssonar0": {
+        "name": "obstacle-avoidance",
+        "args": [
+            "auv",
+            "t53point",
+            "ssssonar0"
+        ],
+        "pre": {},
+        "per": {
+            "at": [
+                "auv",
+                "t53point"
+            ]
+        },
+        "add": {},
+        "del": {}
+    },
+    "waypoint-following_auv_t53point_t54point_ssssonar1_ssssonar0": {
+        "name": "waypoint-following",
+        "args": [
+            "auv",
+            "t53point",
+            "t54point",
+            "ssssonar1",
+            "ssssonar0"
+        ],
+        "pre": {},
+        "per": {
+            "at": [
+                "auv",
+                "t53point"
+            ]
+        },
+        "add": {},
+        "del": {}
+    },
+    "obstacle-avoidance_auv_t54point_ssssonar0": {
+        "name": "obstacle-avoidance",
+        "args": [
+            "auv",
+            "t54point",
+            "ssssonar0"
+        ],
+        "pre": {},
+        "per": {
+            "at": [
+                "auv",
+                "t54point"
+            ]
+        },
+        "add": {},
+        "del": {}
+    },
+    "waypoint-following_auv_t54point_t55point_ssssonar1_ssssonar0": {
+        "name": "waypoint-following",
+        "args": [
+            "auv",
+            "t54point",
+            "t55point",
+            "ssssonar1",
+            "ssssonar0"
+        ],
+        "pre": {},
+        "per": {
+            "at": [
+                "auv",
+                "t54point"
+            ]
+        },
+        "add": {},
+        "del": {}
+    },
+    "obstacle-avoidance_auv_t55point_ssssonar0": {
+        "name": "obstacle-avoidance",
+        "args": [
+            "auv",
+            "t55point",
+            "ssssonar0"
+        ],
+        "pre": {},
+        "per": {
+            "at": [
+                "auv",
+                "t55point"
+            ]
+        },
+        "add": {},
+        "del": {}
+    },
+    "waypoint-following_auv_t55point_t56point_ssssonar1_ssssonar0": {
+        "name": "waypoint-following",
+        "args": [
+            "auv",
+            "t55point",
+            "t56point",
+            "ssssonar1",
+            "ssssonar0"
+        ],
+        "pre": {},
+        "per": {
+            "at": [
+                "auv",
+                "t55point"
+            ]
+        },
+        "add": {},
+        "del": {}
+    },
+    "obstacle-avoidance_auv_t56point_ssssonar0": {
+        "name": "obstacle-avoidance",
+        "args": [
+            "auv",
+            "t56point",
+            "ssssonar0"
+        ],
+        "pre": {},
+        "per": {
+            "at": [
+                "auv",
+                "t56point"
+            ]
+        },
+        "add": {},
+        "del": {}
+    },
+    "waypoint-following_auv_t56point_t57point_ssssonar1_ssssonar0": {
+        "name": "waypoint-following",
+        "args": [
+            "auv",
+            "t56point",
+            "t57point",
+            "ssssonar1",
+            "ssssonar0"
+        ],
+        "pre": {},
+        "per": {
+            "at": [
+                "auv",
+                "t56point"
+            ]
+        },
+        "add": {},
+        "del": {}
+    },
+    "obstacle-avoidance_auv_t57point_ssssonar0": {
+        "name": "obstacle-avoidance",
+        "args": [
+            "auv",
+            "t57point",
+            "ssssonar0"
+        ],
+        "pre": {},
+        "per": {
+            "at": [
+                "auv",
+                "t57point"
+            ]
+        },
+        "add": {},
+        "del": {}
+    },
+    "waypoint-following_auv_t57point_t58point_ssssonar1_ssssonar0": {
+        "name": "waypoint-following",
+        "args": [
+            "auv",
+            "t57point",
+            "t58point",
+            "ssssonar1",
+            "ssssonar0"
+        ],
+        "pre": {},
+        "per": {
+            "at": [
+                "auv",
+                "t57point"
+            ]
+        },
+        "add": {},
+        "del": {}
+    },
+    "obstacle-avoidance_auv_t58point_ssssonar0": {
+        "name": "obstacle-avoidance",
+        "args": [
+            "auv",
+            "t58point",
+            "ssssonar0"
+        ],
+        "pre": {},
+        "per": {
+            "at": [
+                "auv",
+                "t58point"
+            ]
+        },
+        "add": {},
+        "del": {}
+    },
+    "waypoint-following_auv_t58point_t59point_ssssonar1_ssssonar0": {
+        "name": "waypoint-following",
+        "args": [
+            "auv",
+            "t58point",
+            "t59point",
+            "ssssonar1",
+            "ssssonar0"
+        ],
+        "pre": {},
+        "per": {
+            "at": [
+                "auv",
+                "t58point"
+            ]
+        },
+        "add": {},
+        "del": {}
+    },
+    "obstacle-avoidance_auv_t59point_ssssonar0": {
+        "name": "obstacle-avoidance",
+        "args": [
+            "auv",
+            "t59point",
+            "ssssonar0"
+        ],
+        "pre": {},
+        "per": {
+            "at": [
+                "auv",
+                "t59point"
+            ]
+        },
+        "add": {},
+        "del": {}
+    },
+    "waypoint-following_auv_t59point_t60point_ssssonar1_ssssonar0": {
+        "name": "waypoint-following",
+        "args": [
+            "auv",
+            "t59point",
+            "t60point",
+            "ssssonar1",
+            "ssssonar0"
+        ],
+        "pre": {},
+        "per": {
+            "at": [
+                "auv",
+                "t59point"
+            ]
+        },
+        "add": {},
+        "del": {}
+    },
+    "obstacle-avoidance_auv_t60point_ssssonar0": {
+        "name": "obstacle-avoidance",
+        "args": [
+            "auv",
+            "t60point",
+            "ssssonar0"
+        ],
+        "pre": {},
+        "per": {
+            "at": [
+                "auv",
+                "t60point"
+            ]
+        },
+        "add": {},
+        "del": {}
+    },
+    "waypoint-following_auv_t60point_t61point_ssssonar1_ssssonar0": {
+        "name": "waypoint-following",
+        "args": [
+            "auv",
+            "t60point",
+            "t61point",
+            "ssssonar1",
+            "ssssonar0"
+        ],
+        "pre": {},
+        "per": {
+            "at": [
+                "auv",
+                "t60point"
+            ]
+        },
+        "add": {},
+        "del": {}
+    },
+    "obstacle-avoidance_auv_t61point_ssssonar0": {
+        "name": "obstacle-avoidance",
+        "args": [
+            "auv",
+            "t61point",
+            "ssssonar0"
+        ],
+        "pre": {},
+        "per": {
+            "at": [
+                "auv",
+                "t61point"
+            ]
+        },
+        "add": {},
+        "del": {}
+    },
+    "waypoint-following_auv_t61point_t62point_ssssonar1_ssssonar0": {
+        "name": "waypoint-following",
+        "args": [
+            "auv",
+            "t61point",
+            "t62point",
+            "ssssonar1",
+            "ssssonar0"
+        ],
+        "pre": {},
+        "per": {
+            "at": [
+                "auv",
+                "t61point"
+            ]
+        },
+        "add": {},
+        "del": {}
+    },
+    "obstacle-avoidance_auv_t62point_ssssonar0": {
+        "name": "obstacle-avoidance",
+        "args": [
+            "auv",
+            "t62point",
+            "ssssonar0"
+        ],
+        "pre": {},
+        "per": {
+            "at": [
+                "auv",
+                "t62point"
+            ]
+        },
+        "add": {},
+        "del": {}
+    },
+    "waypoint-following_auv_t62point_t63point_ssssonar1_ssssonar0": {
+        "name": "waypoint-following",
+        "args": [
+            "auv",
+            "t62point",
+            "t63point",
+            "ssssonar1",
+            "ssssonar0"
+        ],
+        "pre": {},
+        "per": {
+            "at": [
+                "auv",
+                "t62point"
+            ]
+        },
+        "add": {},
+        "del": {}
+    },
+    "obstacle-avoidance_auv_t63point_ssssonar0": {
+        "name": "obstacle-avoidance",
+        "args": [
+            "auv",
+            "t63point",
+            "ssssonar0"
+        ],
+        "pre": {},
+        "per": {
+            "at": [
+                "auv",
+                "t63point"
+            ]
+        },
+        "add": {},
+        "del": {}
+    },
+    "waypoint-following_auv_t63point_t64point_ssssonar1_ssssonar0": {
+        "name": "waypoint-following",
+        "args": [
+            "auv",
+            "t63point",
+            "t64point",
+            "ssssonar1",
+            "ssssonar0"
+        ],
+        "pre": {},
+        "per": {
+            "at": [
+                "auv",
+                "t63point"
+            ]
+        },
+        "add": {},
+        "del": {}
+    },
+    "obstacle-avoidance_auv_t64point_ssssonar0": {
+        "name": "obstacle-avoidance",
+        "args": [
+            "auv",
+            "t64point",
+            "ssssonar0"
+        ],
+        "pre": {},
+        "per": {
+            "at": [
+                "auv",
+                "t64point"
+            ]
+        },
+        "add": {},
+        "del": {}
+    },
+    "waypoint-following_auv_t64point_t65point_ssssonar1_ssssonar0": {
+        "name": "waypoint-following",
+        "args": [
+            "auv",
+            "t64point",
+            "t65point",
+            "ssssonar1",
+            "ssssonar0"
+        ],
+        "pre": {},
+        "per": {
+            "at": [
+                "auv",
+                "t64point"
+            ]
+        },
+        "add": {},
+        "del": {}
+    },
+    "obstacle-avoidance_auv_t65point_ssssonar0": {
+        "name": "obstacle-avoidance",
+        "args": [
+            "auv",
+            "t65point",
+            "ssssonar0"
+        ],
+        "pre": {},
+        "per": {
+            "at": [
+                "auv",
+                "t65point"
+            ]
+        },
+        "add": {},
+        "del": {}
+    },
+    "waypoint-following_auv_t65point_t66point_ssssonar1_ssssonar0": {
+        "name": "waypoint-following",
+        "args": [
+            "auv",
+            "t65point",
+            "t66point",
+            "ssssonar1",
+            "ssssonar0"
+        ],
+        "pre": {},
+        "per": {
+            "at": [
+                "auv",
+                "t65point"
+            ]
+        },
+        "add": {},
+        "del": {}
+    },
+    "obstacle-avoidance_auv_t66point_ssssonar0": {
+        "name": "obstacle-avoidance",
+        "args": [
+            "auv",
+            "t66point",
+            "ssssonar0"
+        ],
+        "pre": {},
+        "per": {
+            "at": [
+                "auv",
+                "t66point"
+            ]
+        },
+        "add": {},
+        "del": {}
+    },
+    "waypoint-following_auv_t66point_t67point_ssssonar1_ssssonar0": {
+        "name": "waypoint-following",
+        "args": [
+            "auv",
+            "t66point",
+            "t67point",
+            "ssssonar1",
+            "ssssonar0"
+        ],
+        "pre": {},
+        "per": {
+            "at": [
+                "auv",
+                "t66point"
+            ]
+        },
+        "add": {},
+        "del": {}
+    },
+    "obstacle-avoidance_auv_t67point_ssssonar0": {
+        "name": "obstacle-avoidance",
+        "args": [
+            "auv",
+            "t67point",
+            "ssssonar0"
+        ],
+        "pre": {},
+        "per": {
+            "at": [
+                "auv",
+                "t67point"
+            ]
+        },
+        "add": {},
+        "del": {}
+    },
+    "waypoint-following_auv_t67point_t68point_ssssonar1_ssssonar0": {
+        "name": "waypoint-following",
+        "args": [
+            "auv",
+            "t67point",
+            "t68point",
+            "ssssonar1",
+            "ssssonar0"
+        ],
+        "pre": {},
+        "per": {
+            "at": [
+                "auv",
+                "t67point"
+            ]
+        },
+        "add": {},
+        "del": {}
+    },
+    "obstacle-avoidance_auv_t68point_ssssonar0": {
+        "name": "obstacle-avoidance",
+        "args": [
+            "auv",
+            "t68point",
+            "ssssonar0"
+        ],
+        "pre": {},
+        "per": {
+            "at": [
+                "auv",
+                "t68point"
+            ]
+        },
+        "add": {},
+        "del": {}
+    },
+    "waypoint-following_auv_t68point_t69point_ssssonar1_ssssonar0": {
+        "name": "waypoint-following",
+        "args": [
+            "auv",
+            "t68point",
+            "t69point",
+            "ssssonar1",
+            "ssssonar0"
+        ],
+        "pre": {},
+        "per": {
+            "at": [
+                "auv",
+                "t68point"
+            ]
+        },
+        "add": {},
+        "del": {}
+    },
+    "obstacle-avoidance_auv_t69point_ssssonar0": {
+        "name": "obstacle-avoidance",
+        "args": [
+            "auv",
+            "t69point",
+            "ssssonar0"
+        ],
+        "pre": {},
+        "per": {
+            "at": [
+                "auv",
+                "t69point"
+            ]
+        },
+        "add": {},
+        "del": {}
+    },
+    "waypoint-following_auv_t69point_t70point_ssssonar1_ssssonar0": {
+        "name": "waypoint-following",
+        "args": [
+            "auv",
+            "t69point",
+            "t70point",
+            "ssssonar1",
+            "ssssonar0"
+        ],
+        "pre": {},
+        "per": {
+            "at": [
+                "auv",
+                "t69point"
+            ]
+        },
+        "add": {},
+        "del": {}
+    },
+    "obstacle-avoidance_auv_t70point_ssssonar0": {
+        "name": "obstacle-avoidance",
+        "args": [
+            "auv",
+            "t70point",
+            "ssssonar0"
+        ],
+        "pre": {},
+        "per": {
+            "at": [
+                "auv",
+                "t70point"
+            ]
+        },
+        "add": {},
+        "del": {}
+    },
+    "waypoint-following_auv_t70point_t71point_ssssonar1_ssssonar0": {
+        "name": "waypoint-following",
+        "args": [
+            "auv",
+            "t70point",
+            "t71point",
+            "ssssonar1",
+            "ssssonar0"
+        ],
+        "pre": {},
+        "per": {
+            "at": [
+                "auv",
+                "t70point"
+            ]
+        },
+        "add": {},
+        "del": {}
+    },
+    "obstacle-avoidance_auv_t71point_ssssonar0": {
+        "name": "obstacle-avoidance",
+        "args": [
+            "auv",
+            "t71point",
+            "ssssonar0"
+        ],
+        "pre": {},
+        "per": {
+            "at": [
+                "auv",
+                "t71point"
+            ]
+        },
+        "add": {},
+        "del": {}
+    },
+    "waypoint-following_auv_t71point_t72point_ssssonar1_ssssonar0": {
+        "name": "waypoint-following",
+        "args": [
+            "auv",
+            "t71point",
+            "t72point",
+            "ssssonar1",
+            "ssssonar0"
+        ],
+        "pre": {},
+        "per": {
+            "at": [
+                "auv",
+                "t71point"
+            ]
+        },
+        "add": {},
+        "del": {}
+    },
+    "obstacle-avoidance_auv_t72point_ssssonar0": {
+        "name": "obstacle-avoidance",
+        "args": [
+            "auv",
+            "t72point",
+            "ssssonar0"
+        ],
+        "pre": {},
+        "per": {
+            "at": [
+                "auv",
+                "t72point"
+            ]
+        },
+        "add": {},
+        "del": {}
+    },
+    "waypoint-following_auv_t72point_t73point_ssssonar1_ssssonar0": {
+        "name": "waypoint-following",
+        "args": [
+            "auv",
+            "t72point",
+            "t73point",
+            "ssssonar1",
+            "ssssonar0"
+        ],
+        "pre": {},
+        "per": {
+            "at": [
+                "auv",
+                "t72point"
+            ]
+        },
+        "add": {},
+        "del": {}
+    },
+    "obstacle-avoidance_auv_t73point_ssssonar0": {
+        "name": "obstacle-avoidance",
+        "args": [
+            "auv",
+            "t73point",
+            "ssssonar0"
+        ],
+        "pre": {},
+        "per": {
+            "at": [
+                "auv",
+                "t73point"
+            ]
+        },
+        "add": {},
+        "del": {}
+    },
+    "waypoint-following_auv_t73point_t74point_ssssonar1_ssssonar0": {
+        "name": "waypoint-following",
+        "args": [
+            "auv",
+            "t73point",
+            "t74point",
+            "ssssonar1",
+            "ssssonar0"
+        ],
+        "pre": {},
+        "per": {
+            "at": [
+                "auv",
+                "t73point"
+            ]
+        },
+        "add": {},
+        "del": {}
+    },
+    "obstacle-avoidance_auv_t74point_ssssonar0": {
+        "name": "obstacle-avoidance",
+        "args": [
+            "auv",
+            "t74point",
+            "ssssonar0"
+        ],
+        "pre": {},
+        "per": {
+            "at": [
+                "auv",
+                "t74point"
+            ]
+        },
+        "add": {},
+        "del": {}
+    },
+    "waypoint-following_auv_t74point_t75point_ssssonar1_ssssonar0": {
+        "name": "waypoint-following",
+        "args": [
+            "auv",
+            "t74point",
+            "t75point",
+            "ssssonar1",
+            "ssssonar0"
+        ],
+        "pre": {},
+        "per": {
+            "at": [
+                "auv",
+                "t74point"
+            ]
+        },
+        "add": {},
+        "del": {}
+    },
+    "obstacle-avoidance_auv_t75point_ssssonar0": {
+        "name": "obstacle-avoidance",
+        "args": [
+            "auv",
+            "t75point",
+            "ssssonar0"
+        ],
+        "pre": {},
+        "per": {
+            "at": [
+                "auv",
+                "t75point"
+            ]
+        },
+        "add": {},
+        "del": {}
+    },
+    "waypoint-following_auv_t75point_t76point_ssssonar1_ssssonar0": {
+        "name": "waypoint-following",
+        "args": [
+            "auv",
+            "t75point",
+            "t76point",
+            "ssssonar1",
+            "ssssonar0"
+        ],
+        "pre": {},
+        "per": {
+            "at": [
+                "auv",
+                "t75point"
+            ]
+        },
+        "add": {},
+        "del": {}
+    },
+    "obstacle-avoidance_auv_t76point_ssssonar0": {
+        "name": "obstacle-avoidance",
+        "args": [
+            "auv",
+            "t76point",
+            "ssssonar0"
+        ],
+        "pre": {},
+        "per": {
+            "at": [
+                "auv",
+                "t76point"
+            ]
+        },
+        "add": {},
+        "del": {}
+    },
+    "waypoint-following_auv_t76point_t77point_ssssonar1_ssssonar0": {
+        "name": "waypoint-following",
+        "args": [
+            "auv",
+            "t76point",
+            "t77point",
+            "ssssonar1",
+            "ssssonar0"
+        ],
+        "pre": {},
+        "per": {
+            "at": [
+                "auv",
+                "t76point"
+            ]
+        },
+        "add": {},
+        "del": {}
+    },
+    "obstacle-avoidance_auv_t77point_ssssonar0": {
+        "name": "obstacle-avoidance",
+        "args": [
+            "auv",
+            "t77point",
+            "ssssonar0"
+        ],
+        "pre": {},
+        "per": {
+            "at": [
+                "auv",
+                "t77point"
+            ]
+        },
+        "add": {},
+        "del": {}
+    },
+    "waypoint-following_auv_t77point_t78point_ssssonar1_ssssonar0": {
+        "name": "waypoint-following",
+        "args": [
+            "auv",
+            "t77point",
+            "t78point",
+            "ssssonar1",
+            "ssssonar0"
+        ],
+        "pre": {},
+        "per": {
+            "at": [
+                "auv",
+                "t77point"
+            ]
+        },
+        "add": {},
+        "del": {}
+    },
+    "obstacle-avoidance_auv_t78point_ssssonar0": {
+        "name": "obstacle-avoidance",
+        "args": [
+            "auv",
+            "t78point",
+            "ssssonar0"
+        ],
+        "pre": {},
+        "per": {
+            "at": [
+                "auv",
+                "t78point"
+            ]
+        },
+        "add": {},
+        "del": {}
+    },
+    "waypoint-following_auv_t78point_t79point_ssssonar1_ssssonar0": {
+        "name": "waypoint-following",
+        "args": [
+            "auv",
+            "t78point",
+            "t79point",
+            "ssssonar1",
+            "ssssonar0"
+        ],
+        "pre": {},
+        "per": {
+            "at": [
+                "auv",
+                "t78point"
+            ]
+        },
+        "add": {},
+        "del": {}
+    },
+    "obstacle-avoidance_auv_t79point_ssssonar0": {
+        "name": "obstacle-avoidance",
+        "args": [
+            "auv",
+            "t79point",
+            "ssssonar0"
+        ],
+        "pre": {},
+        "per": {
+            "at": [
+                "auv",
+                "t79point"
+            ]
+        },
+        "add": {},
+        "del": {}
+    },
+    "waypoint-following_auv_t79point_t80point_ssssonar1_ssssonar0": {
+        "name": "waypoint-following",
+        "args": [
+            "auv",
+            "t79point",
+            "t80point",
+            "ssssonar1",
+            "ssssonar0"
+        ],
+        "pre": {},
+        "per": {
+            "at": [
+                "auv",
+                "t79point"
+            ]
+        },
+        "add": {},
+        "del": {}
+    },
+    "obstacle-avoidance_auv_t80point_ssssonar0": {
+        "name": "obstacle-avoidance",
+        "args": [
+            "auv",
+            "t80point",
+            "ssssonar0"
+        ],
+        "pre": {},
+        "per": {
+            "at": [
+                "auv",
+                "t80point"
+            ]
+        },
+        "add": {},
+        "del": {}
+    },
+    "waypoint-following_auv_t80point_t91point_ssssonar1_ssssonar0": {
+        "name": "waypoint-following",
+        "args": [
+            "auv",
+            "t80point",
+            "t91point",
+            "ssssonar1",
+            "ssssonar0"
+        ],
+        "pre": {},
+        "per": {
+            "at": [
+                "auv",
+                "t80point"
+            ]
+        },
+        "add": {},
+        "del": {}
+    },
+    "obstacle-avoidance_auv_t91point_ssssonar0": {
+        "name": "obstacle-avoidance",
+        "args": [
+            "auv",
+            "t91point",
+            "ssssonar0"
+        ],
+        "pre": {},
+        "per": {
+            "at": [
+                "auv",
+                "t91point"
+            ]
+        },
+        "add": {},
+        "del": {}
+    },
+    "waypoint-following_auv_t91point_t92point_ssssonar1_ssssonar0": {
+        "name": "waypoint-following",
+        "args": [
+            "auv",
+            "t91point",
+            "t92point",
+            "ssssonar1",
+            "ssssonar0"
+        ],
+        "pre": {},
+        "per": {
+            "at": [
+                "auv",
+                "t91point"
+            ]
+        },
+        "add": {},
+        "del": {}
+    },
+    "obstacle-avoidance_auv_t92point_ssssonar0": {
+        "name": "obstacle-avoidance",
+        "args": [
+            "auv",
+            "t92point",
+            "ssssonar0"
+        ],
+        "pre": {},
+        "per": {
+            "at": [
+                "auv",
+                "t92point"
+            ]
+        },
+        "add": {},
+        "del": {}
+    },
+    "waypoint-following_auv_t92point_t93point_ssssonar1_ssssonar0": {
+        "name": "waypoint-following",
+        "args": [
+            "auv",
+            "t92point",
+            "t93point",
+            "ssssonar1",
+            "ssssonar0"
+        ],
+        "pre": {},
+        "per": {
+            "at": [
+                "auv",
+                "t92point"
+            ]
+        },
+        "add": {},
+        "del": {}
+    },
+    "obstacle-avoidance_auv_t93point_ssssonar0": {
+        "name": "obstacle-avoidance",
+        "args": [
+            "auv",
+            "t93point",
+            "ssssonar0"
+        ],
+        "pre": {},
+        "per": {
+            "at": [
+                "auv",
+                "t93point"
+            ]
+        },
+        "add": {},
+        "del": {}
+    },
+    "waypoint-following_auv_t93point_t94point_ssssonar1_ssssonar0": {
+        "name": "waypoint-following",
+        "args": [
+            "auv",
+            "t93point",
+            "t94point",
+            "ssssonar1",
+            "ssssonar0"
+        ],
+        "pre": {},
+        "per": {
+            "at": [
+                "auv",
+                "t93point"
+            ]
+        },
+        "add": {},
+        "del": {}
+    },
+    "obstacle-avoidance_auv_t94point_ssssonar0": {
+        "name": "obstacle-avoidance",
+        "args": [
+            "auv",
+            "t94point",
+            "ssssonar0"
+        ],
+        "pre": {},
+        "per": {
+            "at": [
+                "auv",
+                "t94point"
+            ]
+        },
+        "add": {},
+        "del": {}
+    },
+    "waypoint-following_auv_t94point_t95point_ssssonar1_ssssonar0": {
+        "name": "waypoint-following",
+        "args": [
+            "auv",
+            "t94point",
+            "t95point",
+            "ssssonar1",
+            "ssssonar0"
+        ],
+        "pre": {},
+        "per": {
+            "at": [
+                "auv",
+                "t94point"
+            ]
+        },
+        "add": {},
+        "del": {}
+    },
+    "obstacle-avoidance_auv_t95point_ssssonar0": {
+        "name": "obstacle-avoidance",
+        "args": [
+            "auv",
+            "t95point",
+            "ssssonar0"
+        ],
+        "pre": {},
+        "per": {
+            "at": [
+                "auv",
+                "t95point"
+            ]
+        },
+        "add": {},
+        "del": {}
+    },
+    "waypoint-following_auv_t95point_t96point_ssssonar1_ssssonar0": {
+        "name": "waypoint-following",
+        "args": [
+            "auv",
+            "t95point",
+            "t96point",
+            "ssssonar1",
+            "ssssonar0"
+        ],
+        "pre": {},
+        "per": {
+            "at": [
+                "auv",
+                "t95point"
+            ]
+        },
+        "add": {},
+        "del": {}
+    },
+    "obstacle-avoidance_auv_t96point_ssssonar0": {
+        "name": "obstacle-avoidance",
+        "args": [
+            "auv",
+            "t96point",
+            "ssssonar0"
+        ],
+        "pre": {},
+        "per": {
+            "at": [
+                "auv",
+                "t96point"
+            ]
+        },
+        "add": {},
+        "del": {}
+    },
+    "waypoint-following_auv_t96point_t97point_ssssonar1_ssssonar0": {
+        "name": "waypoint-following",
+        "args": [
+            "auv",
+            "t96point",
+            "t97point",
+            "ssssonar1",
+            "ssssonar0"
+        ],
+        "pre": {},
+        "per": {
+            "at": [
+                "auv",
+                "t96point"
+            ]
+        },
+        "add": {},
+        "del": {}
+    },
+    "obstacle-avoidance_auv_t97point_ssssonar0": {
+        "name": "obstacle-avoidance",
+        "args": [
+            "auv",
+            "t97point",
+            "ssssonar0"
+        ],
+        "pre": {},
+        "per": {
+            "at": [
+                "auv",
+                "t97point"
+            ]
+        },
+        "add": {},
+        "del": {}
+    },
+    "waypoint-following_auv_t97point_t98point_ssssonar1_ssssonar0": {
+        "name": "waypoint-following",
+        "args": [
+            "auv",
+            "t97point",
+            "t98point",
+            "ssssonar1",
+            "ssssonar0"
+        ],
+        "pre": {},
+        "per": {
+            "at": [
+                "auv",
+                "t97point"
+            ]
+        },
+        "add": {},
+        "del": {}
+    },
+    "obstacle-avoidance_auv_t98point_ssssonar0": {
+        "name": "obstacle-avoidance",
+        "args": [
+            "auv",
+            "t98point",
+            "ssssonar0"
+        ],
+        "pre": {},
+        "per": {
+            "at": [
+                "auv",
+                "t98point"
+            ]
+        },
+        "add": {},
+        "del": {}
+    },
+    "waypoint-following_auv_t98point_t99point_ssssonar1_ssssonar0": {
+        "name": "waypoint-following",
+        "args": [
+            "auv",
+            "t98point",
+            "t99point",
+            "ssssonar1",
+            "ssssonar0"
+        ],
+        "pre": {},
+        "per": {
+            "at": [
+                "auv",
+                "t98point"
+            ]
+        },
+        "add": {},
+        "del": {}
+    },
+    "obstacle-avoidance_auv_t99point_ssssonar0": {
+        "name": "obstacle-avoidance",
+        "args": [
+            "auv",
+            "t99point",
+            "ssssonar0"
+        ],
+        "pre": {},
+        "per": {
+            "at": [
+                "auv",
+                "t99point"
+            ]
+        },
+        "add": {},
+        "del": {}
+    },
+    "waypoint-following_auv_t99point_t100point_ssssonar1_ssssonar0": {
+        "name": "waypoint-following",
+        "args": [
+            "auv",
+            "t99point",
+            "t100point",
+            "ssssonar1",
+            "ssssonar0"
+        ],
+        "pre": {},
+        "per": {
+            "at": [
+                "auv",
+                "t99point"
+            ]
+        },
+        "add": {},
+        "del": {}
+    },
+    "obstacle-avoidance_auv_t100point_ssssonar0": {
+        "name": "obstacle-avoidance",
+        "args": [
+            "auv",
+            "t100point",
+            "ssssonar0"
+        ],
+        "pre": {},
+        "per": {
+            "at": [
+                "auv",
+                "t100point"
+            ]
+        },
+        "add": {},
+        "del": {}
+    },
+    "waypoint-following_auv_t100point_oilleakagepoint_ssssonar1_ssssonar0": {
+        "name": "waypoint-following",
+        "args": [
+            "auv",
+            "t100point",
+            "oilleakagepoint",
+            "ssssonar1",
+            "ssssonar0"
+        ],
+        "pre": {},
+        "per": {
+            "at": [
+                "auv",
+                "t100point"
+            ]
+        },
+        "add": {},
+        "del": {}
+    },
+    "obstacle-avoidance_auv_oilleakagepoint_ssssonar0": {
+        "name": "obstacle-avoidance",
+        "args": [
+            "auv",
+            "oilleakagepoint",
+            "ssssonar0"
+        ],
+        "pre": {},
+        "per": {
+            "at": [
+                "auv",
+                "oilleakagepoint"
+            ]
+        },
+        "add": {},
+        "del": {}
+    },
+    "waypoint-following_auv_oilleakagepoint_middletopoint_ssssonar1_ssssonar0": {
+        "name": "waypoint-following",
+        "args": [
+            "auv",
+            "oilleakagepoint",
+            "middletopoint",
+            "ssssonar1",
+            "ssssonar0"
+        ],
+        "pre": {},
+        "per": {
+            "at": [
+                "auv",
+                "oilleakagepoint"
+            ]
+        },
+        "add": {},
+        "del": {}
+    },
+    "waypoint-following_auv_middletopoint_finalpoint_ssssonar1_ssssonar0": {
+        "name": "waypoint-following",
+        "args": [
+            "auv",
+            "middletopoint",
+            "finalpoint",
+            "ssssonar1",
+            "ssssonar0"
+        ],
+        "pre": {},
+        "per": {
+            "at": [
+                "auv",
+                "middletopoint"
+            ]
+        },
+        "add": {},
+        "del": {}
+    }
+}

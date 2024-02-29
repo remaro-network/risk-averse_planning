@@ -1,0 +1,13 @@
+{
+    "main": {
+        "list": [
+            "waypoint-following_auv_initialpoint_t7point_ssssonar1_ssssonar0",
+            "obstacle-avoidance_auv_t7point_ssssonar0"
+        ],
+        "ordering": "total"
+    },
+    "actions": [
+        "waypoint-following_auv_initialpoint_t7point_ssssonar1_ssssonar0",
+        "obstacle-avoidance_auv_t7point_ssssonar0"
+    ]
+}

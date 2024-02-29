@@ -10,7 +10,7 @@
         harmlessPoint - waypoint
         middlePoint - waypoint
         middletoPoint - waypoint
-         t7Point - waypoint
+        t7Point - waypoint
         t8Point - waypoint
         t9Point - waypoint
         t10Point - waypoint
@@ -54,6 +54,16 @@
         t48Point - waypoint
         t49Point - waypoint
         t50Point - waypoint
+        t51Point - waypoint
+        t52Point - waypoint
+        t53Point - waypoint
+        t54Point - waypoint
+        t55Point - waypoint
+        t56Point - waypoint
+        t57Point - waypoint
+        t58Point - waypoint
+        t59Point - waypoint
+        t60Point - waypoint
 
 
     )
@@ -115,7 +125,6 @@
         (pipelineInspection t38Point)
         (pipelineInspection t39Point)
         (pipelineInspection t40Point)
-
         (pipelineInspection t41Point)
         (pipelineInspection t42Point)
         (pipelineInspection t43Point)
@@ -126,6 +135,16 @@
         (pipelineInspection t48Point)
         (pipelineInspection t49Point)
         (pipelineInspection t50Point)
+        (pipelineInspection t51Point)
+        (pipelineInspection t52Point)
+        (pipelineInspection t53Point)
+        (pipelineInspection t54Point)
+        (pipelineInspection t55Point)
+        (pipelineInspection t56Point)
+        (pipelineInspection t57Point)
+        (pipelineInspection t58Point)
+        (pipelineInspection t59Point)
+        (pipelineInspection t60Point)
     )
 
 )

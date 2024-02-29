@@ -1,0 +1,89 @@
+strict digraph "" {
+	graph [fontname=helvetica];
+	node [fontname=helvetica,
+		label="\N",
+		shape=ellipse
+	];
+	edge [fontname=helvetica];
+	"(end)"	[label=end,
+		peripheries=2,
+		shape=circle];
+	"(obstacle-avoidance auv oilleakagepoint ssssonar0)" -> "(end)";
+	"(obstacle-avoidance auv t80point ssssonar0)" -> "(end)";
+	"(obstacle-avoidance auv t79point ssssonar0)" -> "(end)";
+	"(obstacle-avoidance auv t78point ssssonar0)" -> "(end)";
+	"(obstacle-avoidance auv t77point ssssonar0)" -> "(end)";
+	"(obstacle-avoidance auv t76point ssssonar0)" -> "(end)";
+	"(obstacle-avoidance auv t75point ssssonar0)" -> "(end)";
+	"(obstacle-avoidance auv t74point ssssonar0)" -> "(end)";
+	"(obstacle-avoidance auv t73point ssssonar0)" -> "(end)";
+	"(obstacle-avoidance auv t72point ssssonar0)" -> "(end)";
+	"(obstacle-avoidance auv t71point ssssonar0)" -> "(end)";
+	"(obstacle-avoidance auv t70point ssssonar0)" -> "(end)";
+	"(obstacle-avoidance auv t69point ssssonar0)" -> "(end)";
+	"(obstacle-avoidance auv t68point ssssonar0)" -> "(end)";
+	"(obstacle-avoidance auv t67point ssssonar0)" -> "(end)";
+	"(obstacle-avoidance auv t66point ssssonar0)" -> "(end)";
+	"(obstacle-avoidance auv t65point ssssonar0)" -> "(end)";
+	"(obstacle-avoidance auv t64point ssssonar0)" -> "(end)";
+	"(obstacle-avoidance auv t63point ssssonar0)" -> "(end)";
+	"(obstacle-avoidance auv t62point ssssonar0)" -> "(end)";
+	"(obstacle-avoidance auv t61point ssssonar0)" -> "(end)";
+	"(obstacle-avoidance auv t60point ssssonar0)" -> "(end)";
+	"(obstacle-avoidance auv t59point ssssonar0)" -> "(end)";
+	"(obstacle-avoidance auv t58point ssssonar0)" -> "(end)";
+	"(obstacle-avoidance auv t57point ssssonar0)" -> "(end)";
+	"(obstacle-avoidance auv t56point ssssonar0)" -> "(end)";
+	"(obstacle-avoidance auv t55point ssssonar0)" -> "(end)";
+	"(obstacle-avoidance auv t54point ssssonar0)" -> "(end)";
+	"(obstacle-avoidance auv t53point ssssonar0)" -> "(end)";
+	"(obstacle-avoidance auv t52point ssssonar0)" -> "(end)";
+	"(obstacle-avoidance auv t51point ssssonar0)" -> "(end)";
+	"(obstacle-avoidance auv t50point ssssonar0)" -> "(end)";
+	"(obstacle-avoidance auv t49point ssssonar0)" -> "(end)";
+	"(obstacle-avoidance auv t48point ssssonar0)" -> "(end)";
+	"(obstacle-avoidance auv t47point ssssonar0)" -> "(end)";
+	"(obstacle-avoidance auv t46point ssssonar0)" -> "(end)";
+	"(obstacle-avoidance auv t45point ssssonar0)" -> "(end)";
+	"(obstacle-avoidance auv t44point ssssonar0)" -> "(end)";
+	"(obstacle-avoidance auv t43point ssssonar0)" -> "(end)";
+	"(obstacle-avoidance auv t42point ssssonar0)" -> "(end)";
+	"(obstacle-avoidance auv t41point ssssonar0)" -> "(end)";
+	"(obstacle-avoidance auv t40point ssssonar0)" -> "(end)";
+	"(obstacle-avoidance auv t39point ssssonar0)" -> "(end)";
+	"(obstacle-avoidance auv t38point ssssonar0)" -> "(end)";
+	"(obstacle-avoidance auv t37point ssssonar0)" -> "(end)";
+	"(obstacle-avoidance auv t36point ssssonar0)" -> "(end)";
+	"(obstacle-avoidance auv t35point ssssonar0)" -> "(end)";
+	"(obstacle-avoidance auv t34point ssssonar0)" -> "(end)";
+	"(obstacle-avoidance auv t33point ssssonar0)" -> "(end)";
+	"(obstacle-avoidance auv t32point ssssonar0)" -> "(end)";
+	"(obstacle-avoidance auv t31point ssssonar0)" -> "(end)";
+	"(obstacle-avoidance auv t30point ssssonar0)" -> "(end)";
+	"(obstacle-avoidance auv t29point ssssonar0)" -> "(end)";
+	"(obstacle-avoidance auv t28point ssssonar0)" -> "(end)";
+	"(obstacle-avoidance auv t27point ssssonar0)" -> "(end)";
+	"(obstacle-avoidance auv t26point ssssonar0)" -> "(end)";
+	"(obstacle-avoidance auv t25point ssssonar0)" -> "(end)";
+	"(obstacle-avoidance auv t24point ssssonar0)" -> "(end)";
+	"(obstacle-avoidance auv t23point ssssonar0)" -> "(end)";
+	"(obstacle-avoidance auv t22point ssssonar0)" -> "(end)";
+	"(obstacle-avoidance auv t21point ssssonar0)" -> "(end)";
+	"(obstacle-avoidance auv t20point ssssonar0)" -> "(end)";
+	"(obstacle-avoidance auv t19point ssssonar0)" -> "(end)";
+	"(obstacle-avoidance auv t18point ssssonar0)" -> "(end)";
+	"(obstacle-avoidance auv t17point ssssonar0)" -> "(end)";
+	"(obstacle-avoidance auv t16point ssssonar0)" -> "(end)";
+	"(obstacle-avoidance auv t12point ssssonar0)" -> "(end)";
+	"(obstacle-avoidance auv t11point ssssonar0)" -> "(end)";
+	"(obstacle-avoidance auv t10point ssssonar0)" -> "(end)";
+	"(obstacle-avoidance auv t9point ssssonar0)" -> "(end)";
+	"(obstacle-avoidance auv t8point ssssonar0)" -> "(end)";
+	"(obstacle-avoidance auv t7point ssssonar0)" -> "(end)";
+	"(start)"	[label=start,
+		peripheries=1,
+		shape=circle];
+	"(waypoint-following auv initialpoint t7point ssssonar1 ssssonar0)"	[color=lightgrey,
+		style=filled];
+	"(start)" -> "(waypoint-following auv initialpoint t7point ssssonar1 ssssonar0)";
+}

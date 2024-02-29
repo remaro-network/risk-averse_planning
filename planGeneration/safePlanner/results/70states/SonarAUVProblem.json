@@ -1,0 +1,3150 @@
+{
+    "plan": [
+        "step_0",
+        "step_1",
+        "step_2",
+        "step_3",
+        "step_4",
+        "step_5",
+        "step_6",
+        "step_7",
+        "step_8",
+        "step_9",
+        "step_10",
+        "step_11",
+        "step_12",
+        "step_13",
+        "step_14",
+        "step_15",
+        "step_16",
+        "step_17",
+        "step_18",
+        "step_19",
+        "step_20",
+        "step_21",
+        "step_22",
+        "step_23",
+        "step_24",
+        "step_25",
+        "step_26",
+        "step_27",
+        "step_28",
+        "step_29",
+        "step_30",
+        "step_31",
+        "step_32",
+        "step_33",
+        "step_34",
+        "step_35",
+        "step_36",
+        "step_37",
+        "step_38",
+        "step_39",
+        "step_40",
+        "step_41",
+        "step_42",
+        "step_43",
+        "step_44",
+        "step_45",
+        "step_46",
+        "step_47",
+        "step_48",
+        "step_49",
+        "step_50",
+        "step_51",
+        "step_52",
+        "step_53",
+        "step_54",
+        "step_55",
+        "step_56",
+        "step_57",
+        "step_58",
+        "step_59",
+        "step_60",
+        "step_61",
+        "step_62",
+        "step_63",
+        "step_64",
+        "step_65",
+        "step_66",
+        "step_67",
+        "step_68",
+        "step_69",
+        "step_70",
+        "step_71",
+        "step_72",
+        "step_73",
+        "step_74",
+        "step_75",
+        "step_76",
+        "step_77",
+        "step_78",
+        "step_79",
+        "step_80",
+        "step_81",
+        "step_82",
+        "step_83",
+        "step_84",
+        "step_85",
+        "step_86",
+        "step_87",
+        "step_88",
+        "step_89",
+        "step_90",
+        "step_91",
+        "step_92",
+        "step_93",
+        "step_94",
+        "step_95",
+        "step_96",
+        "step_97",
+        "step_98",
+        "step_99",
+        "step_100",
+        "step_101",
+        "step_102",
+        "step_103",
+        "step_104",
+        "step_105",
+        "step_106",
+        "step_107",
+        "step_108",
+        "step_109",
+        "step_110",
+        "step_111",
+        "step_112",
+        "step_113",
+        "step_114",
+        "step_115",
+        "step_116",
+        "step_117",
+        "step_118",
+        "step_119",
+        "step_120",
+        "step_121",
+        "step_122",
+        "step_123",
+        "step_124",
+        "step_125"
+    ],
+    "step_0": {
+        "actions": [
+            {
+                "name": "waypoint-following",
+                "arguments": [
+                    "auv",
+                    "initialpoint",
+                    "t7point",
+                    "ssssonar1",
+                    "ssssonar0"
+                ]
+            }
+        ],
+        "outcomes": [
+            {
+                "condition": [
+                    "(at auv t7point)"
+                ],
+                "next": "step_1"
+            }
+        ]
+    },
+    "step_1": {
+        "actions": [
+            {
+                "name": "obstacle-avoidance",
+                "arguments": [
+                    "auv",
+                    "t7point",
+                    "ssssonar0"
+                ]
+            }
+        ],
+        "outcomes": [
+            {
+                "condition": [
+                    "(at auv t7point)"
+                ],
+                "next": "step_1"
+            },
+            {
+                "condition": [
+                    "(pipelineinspection t7point)"
+                ],
+                "next": "step_2"
+            }
+        ]
+    },
+    "step_2": {
+        "actions": [
+            {
+                "name": "waypoint-following",
+                "arguments": [
+                    "auv",
+                    "t7point",
+                    "t8point",
+                    "ssssonar1",
+                    "ssssonar0"
+                ]
+            }
+        ],
+        "outcomes": [
+            {
+                "condition": [
+                    "(at auv t8point)"
+                ],
+                "next": "step_3"
+            }
+        ]
+    },
+    "step_3": {
+        "actions": [
+            {
+                "name": "obstacle-avoidance",
+                "arguments": [
+                    "auv",
+                    "t8point",
+                    "ssssonar0"
+                ]
+            }
+        ],
+        "outcomes": [
+            {
+                "condition": [
+                    "(at auv t8point)"
+                ],
+                "next": "step_3"
+            },
+            {
+                "condition": [
+                    "(pipelineinspection t8point)"
+                ],
+                "next": "step_4"
+            }
+        ]
+    },
+    "step_4": {
+        "actions": [
+            {
+                "name": "waypoint-following",
+                "arguments": [
+                    "auv",
+                    "t8point",
+                    "t9point",
+                    "ssssonar1",
+                    "ssssonar0"
+                ]
+            }
+        ],
+        "outcomes": [
+            {
+                "condition": [
+                    "(at auv t9point)"
+                ],
+                "next": "step_5"
+            }
+        ]
+    },
+    "step_5": {
+        "actions": [
+            {
+                "name": "obstacle-avoidance",
+                "arguments": [
+                    "auv",
+                    "t9point",
+                    "ssssonar0"
+                ]
+            }
+        ],
+        "outcomes": [
+            {
+                "condition": [
+                    "(at auv t9point)"
+                ],
+                "next": "step_5"
+            },
+            {
+                "condition": [
+                    "(pipelineinspection t9point)"
+                ],
+                "next": "step_6"
+            }
+        ]
+    },
+    "step_6": {
+        "actions": [
+            {
+                "name": "waypoint-following",
+                "arguments": [
+                    "auv",
+                    "t9point",
+                    "t10point",
+                    "ssssonar1",
+                    "ssssonar0"
+                ]
+            }
+        ],
+        "outcomes": [
+            {
+                "condition": [
+                    "(at auv t10point)"
+                ],
+                "next": "step_7"
+            }
+        ]
+    },
+    "step_7": {
+        "actions": [
+            {
+                "name": "obstacle-avoidance",
+                "arguments": [
+                    "auv",
+                    "t10point",
+                    "ssssonar0"
+                ]
+            }
+        ],
+        "outcomes": [
+            {
+                "condition": [
+                    "(at auv t10point)"
+                ],
+                "next": "step_7"
+            },
+            {
+                "condition": [
+                    "(pipelineinspection t10point)"
+                ],
+                "next": "step_8"
+            }
+        ]
+    },
+    "step_8": {
+        "actions": [
+            {
+                "name": "waypoint-following",
+                "arguments": [
+                    "auv",
+                    "t10point",
+                    "t11point",
+                    "ssssonar1",
+                    "ssssonar0"
+                ]
+            }
+        ],
+        "outcomes": [
+            {
+                "condition": [
+                    "(at auv t11point)"
+                ],
+                "next": "step_9"
+            }
+        ]
+    },
+    "step_9": {
+        "actions": [
+            {
+                "name": "obstacle-avoidance",
+                "arguments": [
+                    "auv",
+                    "t11point",
+                    "ssssonar0"
+                ]
+            }
+        ],
+        "outcomes": [
+            {
+                "condition": [
+                    "(at auv t11point)"
+                ],
+                "next": "step_9"
+            },
+            {
+                "condition": [
+                    "(pipelineinspection t11point)"
+                ],
+                "next": "step_10"
+            }
+        ]
+    },
+    "step_10": {
+        "actions": [
+            {
+                "name": "waypoint-following",
+                "arguments": [
+                    "auv",
+                    "t11point",
+                    "t12point",
+                    "ssssonar1",
+                    "ssssonar0"
+                ]
+            }
+        ],
+        "outcomes": [
+            {
+                "condition": [
+                    "(at auv t12point)"
+                ],
+                "next": "step_11"
+            }
+        ]
+    },
+    "step_11": {
+        "actions": [
+            {
+                "name": "obstacle-avoidance",
+                "arguments": [
+                    "auv",
+                    "t12point",
+                    "ssssonar0"
+                ]
+            }
+        ],
+        "outcomes": [
+            {
+                "condition": [
+                    "(at auv t12point)"
+                ],
+                "next": "step_11"
+            },
+            {
+                "condition": [
+                    "(pipelineinspection t12point)"
+                ],
+                "next": "step_12"
+            }
+        ]
+    },
+    "step_12": {
+        "actions": [
+            {
+                "name": "waypoint-following",
+                "arguments": [
+                    "auv",
+                    "t12point",
+                    "t16point",
+                    "ssssonar1",
+                    "ssssonar0"
+                ]
+            }
+        ],
+        "outcomes": [
+            {
+                "condition": [
+                    "(at auv t16point)"
+                ],
+                "next": "step_13"
+            }
+        ]
+    },
+    "step_13": {
+        "actions": [
+            {
+                "name": "obstacle-avoidance",
+                "arguments": [
+                    "auv",
+                    "t16point",
+                    "ssssonar0"
+                ]
+            }
+        ],
+        "outcomes": [
+            {
+                "condition": [
+                    "(at auv t16point)"
+                ],
+                "next": "step_13"
+            },
+            {
+                "condition": [
+                    "(pipelineinspection t16point)"
+                ],
+                "next": "step_14"
+            }
+        ]
+    },
+    "step_14": {
+        "actions": [
+            {
+                "name": "waypoint-following",
+                "arguments": [
+                    "auv",
+                    "t16point",
+                    "t17point",
+                    "ssssonar1",
+                    "ssssonar0"
+                ]
+            }
+        ],
+        "outcomes": [
+            {
+                "condition": [
+                    "(at auv t17point)"
+                ],
+                "next": "step_15"
+            }
+        ]
+    },
+    "step_15": {
+        "actions": [
+            {
+                "name": "obstacle-avoidance",
+                "arguments": [
+                    "auv",
+                    "t17point",
+                    "ssssonar0"
+                ]
+            }
+        ],
+        "outcomes": [
+            {
+                "condition": [
+                    "(at auv t17point)"
+                ],
+                "next": "step_15"
+            },
+            {
+                "condition": [
+                    "(pipelineinspection t17point)"
+                ],
+                "next": "step_16"
+            }
+        ]
+    },
+    "step_16": {
+        "actions": [
+            {
+                "name": "waypoint-following",
+                "arguments": [
+                    "auv",
+                    "t17point",
+                    "t18point",
+                    "ssssonar1",
+                    "ssssonar0"
+                ]
+            }
+        ],
+        "outcomes": [
+            {
+                "condition": [
+                    "(at auv t18point)"
+                ],
+                "next": "step_17"
+            }
+        ]
+    },
+    "step_17": {
+        "actions": [
+            {
+                "name": "obstacle-avoidance",
+                "arguments": [
+                    "auv",
+                    "t18point",
+                    "ssssonar0"
+                ]
+            }
+        ],
+        "outcomes": [
+            {
+                "condition": [
+                    "(at auv t18point)"
+                ],
+                "next": "step_17"
+            },
+            {
+                "condition": [
+                    "(pipelineinspection t18point)"
+                ],
+                "next": "step_18"
+            }
+        ]
+    },
+    "step_18": {
+        "actions": [
+            {
+                "name": "waypoint-following",
+                "arguments": [
+                    "auv",
+                    "t18point",
+                    "t19point",
+                    "ssssonar1",
+                    "ssssonar0"
+                ]
+            }
+        ],
+        "outcomes": [
+            {
+                "condition": [
+                    "(at auv t19point)"
+                ],
+                "next": "step_19"
+            }
+        ]
+    },
+    "step_19": {
+        "actions": [
+            {
+                "name": "obstacle-avoidance",
+                "arguments": [
+                    "auv",
+                    "t19point",
+                    "ssssonar0"
+                ]
+            }
+        ],
+        "outcomes": [
+            {
+                "condition": [
+                    "(at auv t19point)"
+                ],
+                "next": "step_19"
+            },
+            {
+                "condition": [
+                    "(pipelineinspection t19point)"
+                ],
+                "next": "step_20"
+            }
+        ]
+    },
+    "step_20": {
+        "actions": [
+            {
+                "name": "waypoint-following",
+                "arguments": [
+                    "auv",
+                    "t19point",
+                    "t20point",
+                    "ssssonar1",
+                    "ssssonar0"
+                ]
+            }
+        ],
+        "outcomes": [
+            {
+                "condition": [
+                    "(at auv t20point)"
+                ],
+                "next": "step_21"
+            }
+        ]
+    },
+    "step_21": {
+        "actions": [
+            {
+                "name": "obstacle-avoidance",
+                "arguments": [
+                    "auv",
+                    "t20point",
+                    "ssssonar0"
+                ]
+            }
+        ],
+        "outcomes": [
+            {
+                "condition": [
+                    "(at auv t20point)"
+                ],
+                "next": "step_21"
+            },
+            {
+                "condition": [
+                    "(pipelineinspection t20point)"
+                ],
+                "next": "step_22"
+            }
+        ]
+    },
+    "step_22": {
+        "actions": [
+            {
+                "name": "waypoint-following",
+                "arguments": [
+                    "auv",
+                    "t20point",
+                    "t21point",
+                    "ssssonar1",
+                    "ssssonar0"
+                ]
+            }
+        ],
+        "outcomes": [
+            {
+                "condition": [
+                    "(at auv t21point)"
+                ],
+                "next": "step_23"
+            }
+        ]
+    },
+    "step_23": {
+        "actions": [
+            {
+                "name": "obstacle-avoidance",
+                "arguments": [
+                    "auv",
+                    "t21point",
+                    "ssssonar0"
+                ]
+            }
+        ],
+        "outcomes": [
+            {
+                "condition": [
+                    "(at auv t21point)"
+                ],
+                "next": "step_23"
+            },
+            {
+                "condition": [
+                    "(pipelineinspection t21point)"
+                ],
+                "next": "step_24"
+            }
+        ]
+    },
+    "step_24": {
+        "actions": [
+            {
+                "name": "waypoint-following",
+                "arguments": [
+                    "auv",
+                    "t21point",
+                    "t22point",
+                    "ssssonar1",
+                    "ssssonar0"
+                ]
+            }
+        ],
+        "outcomes": [
+            {
+                "condition": [
+                    "(at auv t22point)"
+                ],
+                "next": "step_25"
+            }
+        ]
+    },
+    "step_25": {
+        "actions": [
+            {
+                "name": "obstacle-avoidance",
+                "arguments": [
+                    "auv",
+                    "t22point",
+                    "ssssonar0"
+                ]
+            }
+        ],
+        "outcomes": [
+            {
+                "condition": [
+                    "(at auv t22point)"
+                ],
+                "next": "step_25"
+            },
+            {
+                "condition": [
+                    "(pipelineinspection t22point)"
+                ],
+                "next": "step_26"
+            }
+        ]
+    },
+    "step_26": {
+        "actions": [
+            {
+                "name": "waypoint-following",
+                "arguments": [
+                    "auv",
+                    "t22point",
+                    "t23point",
+                    "ssssonar1",
+                    "ssssonar0"
+                ]
+            }
+        ],
+        "outcomes": [
+            {
+                "condition": [
+                    "(at auv t23point)"
+                ],
+                "next": "step_27"
+            }
+        ]
+    },
+    "step_27": {
+        "actions": [
+            {
+                "name": "obstacle-avoidance",
+                "arguments": [
+                    "auv",
+                    "t23point",
+                    "ssssonar0"
+                ]
+            }
+        ],
+        "outcomes": [
+            {
+                "condition": [
+                    "(at auv t23point)"
+                ],
+                "next": "step_27"
+            },
+            {
+                "condition": [
+                    "(pipelineinspection t23point)"
+                ],
+                "next": "step_28"
+            }
+        ]
+    },
+    "step_28": {
+        "actions": [
+            {
+                "name": "waypoint-following",
+                "arguments": [
+                    "auv",
+                    "t23point",
+                    "t24point",
+                    "ssssonar1",
+                    "ssssonar0"
+                ]
+            }
+        ],
+        "outcomes": [
+            {
+                "condition": [
+                    "(at auv t24point)"
+                ],
+                "next": "step_29"
+            }
+        ]
+    },
+    "step_29": {
+        "actions": [
+            {
+                "name": "obstacle-avoidance",
+                "arguments": [
+                    "auv",
+                    "t24point",
+                    "ssssonar0"
+                ]
+            }
+        ],
+        "outcomes": [
+            {
+                "condition": [
+                    "(at auv t24point)"
+                ],
+                "next": "step_29"
+            },
+            {
+                "condition": [
+                    "(pipelineinspection t24point)"
+                ],
+                "next": "step_30"
+            }
+        ]
+    },
+    "step_30": {
+        "actions": [
+            {
+                "name": "waypoint-following",
+                "arguments": [
+                    "auv",
+                    "t24point",
+                    "t25point",
+                    "ssssonar1",
+                    "ssssonar0"
+                ]
+            }
+        ],
+        "outcomes": [
+            {
+                "condition": [
+                    "(at auv t25point)"
+                ],
+                "next": "step_31"
+            }
+        ]
+    },
+    "step_31": {
+        "actions": [
+            {
+                "name": "obstacle-avoidance",
+                "arguments": [
+                    "auv",
+                    "t25point",
+                    "ssssonar0"
+                ]
+            }
+        ],
+        "outcomes": [
+            {
+                "condition": [
+                    "(at auv t25point)"
+                ],
+                "next": "step_31"
+            },
+            {
+                "condition": [
+                    "(pipelineinspection t25point)"
+                ],
+                "next": "step_32"
+            }
+        ]
+    },
+    "step_32": {
+        "actions": [
+            {
+                "name": "waypoint-following",
+                "arguments": [
+                    "auv",
+                    "t25point",
+                    "t26point",
+                    "ssssonar1",
+                    "ssssonar0"
+                ]
+            }
+        ],
+        "outcomes": [
+            {
+                "condition": [
+                    "(at auv t26point)"
+                ],
+                "next": "step_33"
+            }
+        ]
+    },
+    "step_33": {
+        "actions": [
+            {
+                "name": "obstacle-avoidance",
+                "arguments": [
+                    "auv",
+                    "t26point",
+                    "ssssonar0"
+                ]
+            }
+        ],
+        "outcomes": [
+            {
+                "condition": [
+                    "(at auv t26point)"
+                ],
+                "next": "step_33"
+            },
+            {
+                "condition": [
+                    "(pipelineinspection t26point)"
+                ],
+                "next": "step_34"
+            }
+        ]
+    },
+    "step_34": {
+        "actions": [
+            {
+                "name": "waypoint-following",
+                "arguments": [
+                    "auv",
+                    "t26point",
+                    "t27point",
+                    "ssssonar1",
+                    "ssssonar0"
+                ]
+            }
+        ],
+        "outcomes": [
+            {
+                "condition": [
+                    "(at auv t27point)"
+                ],
+                "next": "step_35"
+            }
+        ]
+    },
+    "step_35": {
+        "actions": [
+            {
+                "name": "obstacle-avoidance",
+                "arguments": [
+                    "auv",
+                    "t27point",
+                    "ssssonar0"
+                ]
+            }
+        ],
+        "outcomes": [
+            {
+                "condition": [
+                    "(at auv t27point)"
+                ],
+                "next": "step_35"
+            },
+            {
+                "condition": [
+                    "(pipelineinspection t27point)"
+                ],
+                "next": "step_36"
+            }
+        ]
+    },
+    "step_36": {
+        "actions": [
+            {
+                "name": "waypoint-following",
+                "arguments": [
+                    "auv",
+                    "t27point",
+                    "t28point",
+                    "ssssonar1",
+                    "ssssonar0"
+                ]
+            }
+        ],
+        "outcomes": [
+            {
+                "condition": [
+                    "(at auv t28point)"
+                ],
+                "next": "step_37"
+            }
+        ]
+    },
+    "step_37": {
+        "actions": [
+            {
+                "name": "obstacle-avoidance",
+                "arguments": [
+                    "auv",
+                    "t28point",
+                    "ssssonar0"
+                ]
+            }
+        ],
+        "outcomes": [
+            {
+                "condition": [
+                    "(at auv t28point)"
+                ],
+                "next": "step_37"
+            },
+            {
+                "condition": [
+                    "(pipelineinspection t28point)"
+                ],
+                "next": "step_38"
+            }
+        ]
+    },
+    "step_38": {
+        "actions": [
+            {
+                "name": "waypoint-following",
+                "arguments": [
+                    "auv",
+                    "t28point",
+                    "t29point",
+                    "ssssonar1",
+                    "ssssonar0"
+                ]
+            }
+        ],
+        "outcomes": [
+            {
+                "condition": [
+                    "(at auv t29point)"
+                ],
+                "next": "step_39"
+            }
+        ]
+    },
+    "step_39": {
+        "actions": [
+            {
+                "name": "obstacle-avoidance",
+                "arguments": [
+                    "auv",
+                    "t29point",
+                    "ssssonar0"
+                ]
+            }
+        ],
+        "outcomes": [
+            {
+                "condition": [
+                    "(at auv t29point)"
+                ],
+                "next": "step_39"
+            },
+            {
+                "condition": [
+                    "(pipelineinspection t29point)"
+                ],
+                "next": "step_40"
+            }
+        ]
+    },
+    "step_40": {
+        "actions": [
+            {
+                "name": "waypoint-following",
+                "arguments": [
+                    "auv",
+                    "t29point",
+                    "t30point",
+                    "ssssonar1",
+                    "ssssonar0"
+                ]
+            }
+        ],
+        "outcomes": [
+            {
+                "condition": [
+                    "(at auv t30point)"
+                ],
+                "next": "step_41"
+            }
+        ]
+    },
+    "step_41": {
+        "actions": [
+            {
+                "name": "obstacle-avoidance",
+                "arguments": [
+                    "auv",
+                    "t30point",
+                    "ssssonar0"
+                ]
+            }
+        ],
+        "outcomes": [
+            {
+                "condition": [
+                    "(at auv t30point)"
+                ],
+                "next": "step_41"
+            },
+            {
+                "condition": [
+                    "(pipelineinspection t30point)"
+                ],
+                "next": "step_42"
+            }
+        ]
+    },
+    "step_42": {
+        "actions": [
+            {
+                "name": "waypoint-following",
+                "arguments": [
+                    "auv",
+                    "t30point",
+                    "t31point",
+                    "ssssonar1",
+                    "ssssonar0"
+                ]
+            }
+        ],
+        "outcomes": [
+            {
+                "condition": [
+                    "(at auv t31point)"
+                ],
+                "next": "step_43"
+            }
+        ]
+    },
+    "step_43": {
+        "actions": [
+            {
+                "name": "obstacle-avoidance",
+                "arguments": [
+                    "auv",
+                    "t31point",
+                    "ssssonar0"
+                ]
+            }
+        ],
+        "outcomes": [
+            {
+                "condition": [
+                    "(at auv t31point)"
+                ],
+                "next": "step_43"
+            },
+            {
+                "condition": [
+                    "(pipelineinspection t31point)"
+                ],
+                "next": "step_44"
+            }
+        ]
+    },
+    "step_44": {
+        "actions": [
+            {
+                "name": "waypoint-following",
+                "arguments": [
+                    "auv",
+                    "t31point",
+                    "t32point",
+                    "ssssonar1",
+                    "ssssonar0"
+                ]
+            }
+        ],
+        "outcomes": [
+            {
+                "condition": [
+                    "(at auv t32point)"
+                ],
+                "next": "step_45"
+            }
+        ]
+    },
+    "step_45": {
+        "actions": [
+            {
+                "name": "obstacle-avoidance",
+                "arguments": [
+                    "auv",
+                    "t32point",
+                    "ssssonar0"
+                ]
+            }
+        ],
+        "outcomes": [
+            {
+                "condition": [
+                    "(at auv t32point)"
+                ],
+                "next": "step_45"
+            },
+            {
+                "condition": [
+                    "(pipelineinspection t32point)"
+                ],
+                "next": "step_46"
+            }
+        ]
+    },
+    "step_46": {
+        "actions": [
+            {
+                "name": "waypoint-following",
+                "arguments": [
+                    "auv",
+                    "t32point",
+                    "t33point",
+                    "ssssonar1",
+                    "ssssonar0"
+                ]
+            }
+        ],
+        "outcomes": [
+            {
+                "condition": [
+                    "(at auv t33point)"
+                ],
+                "next": "step_47"
+            }
+        ]
+    },
+    "step_47": {
+        "actions": [
+            {
+                "name": "obstacle-avoidance",
+                "arguments": [
+                    "auv",
+                    "t33point",
+                    "ssssonar0"
+                ]
+            }
+        ],
+        "outcomes": [
+            {
+                "condition": [
+                    "(at auv t33point)"
+                ],
+                "next": "step_47"
+            },
+            {
+                "condition": [
+                    "(pipelineinspection t33point)"
+                ],
+                "next": "step_48"
+            }
+        ]
+    },
+    "step_48": {
+        "actions": [
+            {
+                "name": "waypoint-following",
+                "arguments": [
+                    "auv",
+                    "t33point",
+                    "t34point",
+                    "ssssonar1",
+                    "ssssonar0"
+                ]
+            }
+        ],
+        "outcomes": [
+            {
+                "condition": [
+                    "(at auv t34point)"
+                ],
+                "next": "step_49"
+            }
+        ]
+    },
+    "step_49": {
+        "actions": [
+            {
+                "name": "obstacle-avoidance",
+                "arguments": [
+                    "auv",
+                    "t34point",
+                    "ssssonar0"
+                ]
+            }
+        ],
+        "outcomes": [
+            {
+                "condition": [
+                    "(at auv t34point)"
+                ],
+                "next": "step_49"
+            },
+            {
+                "condition": [
+                    "(pipelineinspection t34point)"
+                ],
+                "next": "step_50"
+            }
+        ]
+    },
+    "step_50": {
+        "actions": [
+            {
+                "name": "waypoint-following",
+                "arguments": [
+                    "auv",
+                    "t34point",
+                    "t35point",
+                    "ssssonar1",
+                    "ssssonar0"
+                ]
+            }
+        ],
+        "outcomes": [
+            {
+                "condition": [
+                    "(at auv t35point)"
+                ],
+                "next": "step_51"
+            }
+        ]
+    },
+    "step_51": {
+        "actions": [
+            {
+                "name": "obstacle-avoidance",
+                "arguments": [
+                    "auv",
+                    "t35point",
+                    "ssssonar0"
+                ]
+            }
+        ],
+        "outcomes": [
+            {
+                "condition": [
+                    "(at auv t35point)"
+                ],
+                "next": "step_51"
+            },
+            {
+                "condition": [
+                    "(pipelineinspection t35point)"
+                ],
+                "next": "step_52"
+            }
+        ]
+    },
+    "step_52": {
+        "actions": [
+            {
+                "name": "waypoint-following",
+                "arguments": [
+                    "auv",
+                    "t35point",
+                    "t36point",
+                    "ssssonar1",
+                    "ssssonar0"
+                ]
+            }
+        ],
+        "outcomes": [
+            {
+                "condition": [
+                    "(at auv t36point)"
+                ],
+                "next": "step_53"
+            }
+        ]
+    },
+    "step_53": {
+        "actions": [
+            {
+                "name": "obstacle-avoidance",
+                "arguments": [
+                    "auv",
+                    "t36point",
+                    "ssssonar0"
+                ]
+            }
+        ],
+        "outcomes": [
+            {
+                "condition": [
+                    "(at auv t36point)"
+                ],
+                "next": "step_53"
+            },
+            {
+                "condition": [
+                    "(pipelineinspection t36point)"
+                ],
+                "next": "step_54"
+            }
+        ]
+    },
+    "step_54": {
+        "actions": [
+            {
+                "name": "waypoint-following",
+                "arguments": [
+                    "auv",
+                    "t36point",
+                    "t37point",
+                    "ssssonar1",
+                    "ssssonar0"
+                ]
+            }
+        ],
+        "outcomes": [
+            {
+                "condition": [
+                    "(at auv t37point)"
+                ],
+                "next": "step_55"
+            }
+        ]
+    },
+    "step_55": {
+        "actions": [
+            {
+                "name": "obstacle-avoidance",
+                "arguments": [
+                    "auv",
+                    "t37point",
+                    "ssssonar0"
+                ]
+            }
+        ],
+        "outcomes": [
+            {
+                "condition": [
+                    "(at auv t37point)"
+                ],
+                "next": "step_55"
+            },
+            {
+                "condition": [
+                    "(pipelineinspection t37point)"
+                ],
+                "next": "step_56"
+            }
+        ]
+    },
+    "step_56": {
+        "actions": [
+            {
+                "name": "waypoint-following",
+                "arguments": [
+                    "auv",
+                    "t37point",
+                    "t38point",
+                    "ssssonar1",
+                    "ssssonar0"
+                ]
+            }
+        ],
+        "outcomes": [
+            {
+                "condition": [
+                    "(at auv t38point)"
+                ],
+                "next": "step_57"
+            }
+        ]
+    },
+    "step_57": {
+        "actions": [
+            {
+                "name": "obstacle-avoidance",
+                "arguments": [
+                    "auv",
+                    "t38point",
+                    "ssssonar0"
+                ]
+            }
+        ],
+        "outcomes": [
+            {
+                "condition": [
+                    "(at auv t38point)"
+                ],
+                "next": "step_57"
+            },
+            {
+                "condition": [
+                    "(pipelineinspection t38point)"
+                ],
+                "next": "step_58"
+            }
+        ]
+    },
+    "step_58": {
+        "actions": [
+            {
+                "name": "waypoint-following",
+                "arguments": [
+                    "auv",
+                    "t38point",
+                    "t39point",
+                    "ssssonar1",
+                    "ssssonar0"
+                ]
+            }
+        ],
+        "outcomes": [
+            {
+                "condition": [
+                    "(at auv t39point)"
+                ],
+                "next": "step_59"
+            }
+        ]
+    },
+    "step_59": {
+        "actions": [
+            {
+                "name": "obstacle-avoidance",
+                "arguments": [
+                    "auv",
+                    "t39point",
+                    "ssssonar0"
+                ]
+            }
+        ],
+        "outcomes": [
+            {
+                "condition": [
+                    "(at auv t39point)"
+                ],
+                "next": "step_59"
+            },
+            {
+                "condition": [
+                    "(pipelineinspection t39point)"
+                ],
+                "next": "step_60"
+            }
+        ]
+    },
+    "step_60": {
+        "actions": [
+            {
+                "name": "waypoint-following",
+                "arguments": [
+                    "auv",
+                    "t39point",
+                    "t40point",
+                    "ssssonar1",
+                    "ssssonar0"
+                ]
+            }
+        ],
+        "outcomes": [
+            {
+                "condition": [
+                    "(at auv t40point)"
+                ],
+                "next": "step_61"
+            }
+        ]
+    },
+    "step_61": {
+        "actions": [
+            {
+                "name": "obstacle-avoidance",
+                "arguments": [
+                    "auv",
+                    "t40point",
+                    "ssssonar0"
+                ]
+            }
+        ],
+        "outcomes": [
+            {
+                "condition": [
+                    "(at auv t40point)"
+                ],
+                "next": "step_61"
+            },
+            {
+                "condition": [
+                    "(pipelineinspection t40point)"
+                ],
+                "next": "step_62"
+            }
+        ]
+    },
+    "step_62": {
+        "actions": [
+            {
+                "name": "waypoint-following",
+                "arguments": [
+                    "auv",
+                    "t40point",
+                    "t41point",
+                    "ssssonar1",
+                    "ssssonar0"
+                ]
+            }
+        ],
+        "outcomes": [
+            {
+                "condition": [
+                    "(at auv t41point)"
+                ],
+                "next": "step_63"
+            }
+        ]
+    },
+    "step_63": {
+        "actions": [
+            {
+                "name": "obstacle-avoidance",
+                "arguments": [
+                    "auv",
+                    "t41point",
+                    "ssssonar0"
+                ]
+            }
+        ],
+        "outcomes": [
+            {
+                "condition": [
+                    "(at auv t41point)"
+                ],
+                "next": "step_63"
+            },
+            {
+                "condition": [
+                    "(pipelineinspection t41point)"
+                ],
+                "next": "step_64"
+            }
+        ]
+    },
+    "step_64": {
+        "actions": [
+            {
+                "name": "waypoint-following",
+                "arguments": [
+                    "auv",
+                    "t41point",
+                    "t42point",
+                    "ssssonar1",
+                    "ssssonar0"
+                ]
+            }
+        ],
+        "outcomes": [
+            {
+                "condition": [
+                    "(at auv t42point)"
+                ],
+                "next": "step_65"
+            }
+        ]
+    },
+    "step_65": {
+        "actions": [
+            {
+                "name": "obstacle-avoidance",
+                "arguments": [
+                    "auv",
+                    "t42point",
+                    "ssssonar0"
+                ]
+            }
+        ],
+        "outcomes": [
+            {
+                "condition": [
+                    "(at auv t42point)"
+                ],
+                "next": "step_65"
+            },
+            {
+                "condition": [
+                    "(pipelineinspection t42point)"
+                ],
+                "next": "step_66"
+            }
+        ]
+    },
+    "step_66": {
+        "actions": [
+            {
+                "name": "waypoint-following",
+                "arguments": [
+                    "auv",
+                    "t42point",
+                    "t43point",
+                    "ssssonar1",
+                    "ssssonar0"
+                ]
+            }
+        ],
+        "outcomes": [
+            {
+                "condition": [
+                    "(at auv t43point)"
+                ],
+                "next": "step_67"
+            }
+        ]
+    },
+    "step_67": {
+        "actions": [
+            {
+                "name": "obstacle-avoidance",
+                "arguments": [
+                    "auv",
+                    "t43point",
+                    "ssssonar0"
+                ]
+            }
+        ],
+        "outcomes": [
+            {
+                "condition": [
+                    "(at auv t43point)"
+                ],
+                "next": "step_67"
+            },
+            {
+                "condition": [
+                    "(pipelineinspection t43point)"
+                ],
+                "next": "step_68"
+            }
+        ]
+    },
+    "step_68": {
+        "actions": [
+            {
+                "name": "waypoint-following",
+                "arguments": [
+                    "auv",
+                    "t43point",
+                    "t44point",
+                    "ssssonar1",
+                    "ssssonar0"
+                ]
+            }
+        ],
+        "outcomes": [
+            {
+                "condition": [
+                    "(at auv t44point)"
+                ],
+                "next": "step_69"
+            }
+        ]
+    },
+    "step_69": {
+        "actions": [
+            {
+                "name": "obstacle-avoidance",
+                "arguments": [
+                    "auv",
+                    "t44point",
+                    "ssssonar0"
+                ]
+            }
+        ],
+        "outcomes": [
+            {
+                "condition": [
+                    "(at auv t44point)"
+                ],
+                "next": "step_69"
+            },
+            {
+                "condition": [
+                    "(pipelineinspection t44point)"
+                ],
+                "next": "step_70"
+            }
+        ]
+    },
+    "step_70": {
+        "actions": [
+            {
+                "name": "waypoint-following",
+                "arguments": [
+                    "auv",
+                    "t44point",
+                    "t45point",
+                    "ssssonar1",
+                    "ssssonar0"
+                ]
+            }
+        ],
+        "outcomes": [
+            {
+                "condition": [
+                    "(at auv t45point)"
+                ],
+                "next": "step_71"
+            }
+        ]
+    },
+    "step_71": {
+        "actions": [
+            {
+                "name": "obstacle-avoidance",
+                "arguments": [
+                    "auv",
+                    "t45point",
+                    "ssssonar0"
+                ]
+            }
+        ],
+        "outcomes": [
+            {
+                "condition": [
+                    "(at auv t45point)"
+                ],
+                "next": "step_71"
+            },
+            {
+                "condition": [
+                    "(pipelineinspection t45point)"
+                ],
+                "next": "step_72"
+            }
+        ]
+    },
+    "step_72": {
+        "actions": [
+            {
+                "name": "waypoint-following",
+                "arguments": [
+                    "auv",
+                    "t45point",
+                    "t46point",
+                    "ssssonar1",
+                    "ssssonar0"
+                ]
+            }
+        ],
+        "outcomes": [
+            {
+                "condition": [
+                    "(at auv t46point)"
+                ],
+                "next": "step_73"
+            }
+        ]
+    },
+    "step_73": {
+        "actions": [
+            {
+                "name": "obstacle-avoidance",
+                "arguments": [
+                    "auv",
+                    "t46point",
+                    "ssssonar0"
+                ]
+            }
+        ],
+        "outcomes": [
+            {
+                "condition": [
+                    "(at auv t46point)"
+                ],
+                "next": "step_73"
+            },
+            {
+                "condition": [
+                    "(pipelineinspection t46point)"
+                ],
+                "next": "step_74"
+            }
+        ]
+    },
+    "step_74": {
+        "actions": [
+            {
+                "name": "waypoint-following",
+                "arguments": [
+                    "auv",
+                    "t46point",
+                    "t47point",
+                    "ssssonar1",
+                    "ssssonar0"
+                ]
+            }
+        ],
+        "outcomes": [
+            {
+                "condition": [
+                    "(at auv t47point)"
+                ],
+                "next": "step_75"
+            }
+        ]
+    },
+    "step_75": {
+        "actions": [
+            {
+                "name": "obstacle-avoidance",
+                "arguments": [
+                    "auv",
+                    "t47point",
+                    "ssssonar0"
+                ]
+            }
+        ],
+        "outcomes": [
+            {
+                "condition": [
+                    "(at auv t47point)"
+                ],
+                "next": "step_75"
+            },
+            {
+                "condition": [
+                    "(pipelineinspection t47point)"
+                ],
+                "next": "step_76"
+            }
+        ]
+    },
+    "step_76": {
+        "actions": [
+            {
+                "name": "waypoint-following",
+                "arguments": [
+                    "auv",
+                    "t47point",
+                    "t48point",
+                    "ssssonar1",
+                    "ssssonar0"
+                ]
+            }
+        ],
+        "outcomes": [
+            {
+                "condition": [
+                    "(at auv t48point)"
+                ],
+                "next": "step_77"
+            }
+        ]
+    },
+    "step_77": {
+        "actions": [
+            {
+                "name": "obstacle-avoidance",
+                "arguments": [
+                    "auv",
+                    "t48point",
+                    "ssssonar0"
+                ]
+            }
+        ],
+        "outcomes": [
+            {
+                "condition": [
+                    "(at auv t48point)"
+                ],
+                "next": "step_77"
+            },
+            {
+                "condition": [
+                    "(pipelineinspection t48point)"
+                ],
+                "next": "step_78"
+            }
+        ]
+    },
+    "step_78": {
+        "actions": [
+            {
+                "name": "waypoint-following",
+                "arguments": [
+                    "auv",
+                    "t48point",
+                    "t49point",
+                    "ssssonar1",
+                    "ssssonar0"
+                ]
+            }
+        ],
+        "outcomes": [
+            {
+                "condition": [
+                    "(at auv t49point)"
+                ],
+                "next": "step_79"
+            }
+        ]
+    },
+    "step_79": {
+        "actions": [
+            {
+                "name": "obstacle-avoidance",
+                "arguments": [
+                    "auv",
+                    "t49point",
+                    "ssssonar0"
+                ]
+            }
+        ],
+        "outcomes": [
+            {
+                "condition": [
+                    "(at auv t49point)"
+                ],
+                "next": "step_79"
+            },
+            {
+                "condition": [
+                    "(pipelineinspection t49point)"
+                ],
+                "next": "step_80"
+            }
+        ]
+    },
+    "step_80": {
+        "actions": [
+            {
+                "name": "waypoint-following",
+                "arguments": [
+                    "auv",
+                    "t49point",
+                    "t50point",
+                    "ssssonar1",
+                    "ssssonar0"
+                ]
+            }
+        ],
+        "outcomes": [
+            {
+                "condition": [
+                    "(at auv t50point)"
+                ],
+                "next": "step_81"
+            }
+        ]
+    },
+    "step_81": {
+        "actions": [
+            {
+                "name": "obstacle-avoidance",
+                "arguments": [
+                    "auv",
+                    "t50point",
+                    "ssssonar0"
+                ]
+            }
+        ],
+        "outcomes": [
+            {
+                "condition": [
+                    "(at auv t50point)"
+                ],
+                "next": "step_81"
+            },
+            {
+                "condition": [
+                    "(pipelineinspection t50point)"
+                ],
+                "next": "step_82"
+            }
+        ]
+    },
+    "step_82": {
+        "actions": [
+            {
+                "name": "waypoint-following",
+                "arguments": [
+                    "auv",
+                    "t50point",
+                    "t51point",
+                    "ssssonar1",
+                    "ssssonar0"
+                ]
+            }
+        ],
+        "outcomes": [
+            {
+                "condition": [
+                    "(at auv t51point)"
+                ],
+                "next": "step_83"
+            }
+        ]
+    },
+    "step_83": {
+        "actions": [
+            {
+                "name": "obstacle-avoidance",
+                "arguments": [
+                    "auv",
+                    "t51point",
+                    "ssssonar0"
+                ]
+            }
+        ],
+        "outcomes": [
+            {
+                "condition": [
+                    "(at auv t51point)"
+                ],
+                "next": "step_83"
+            },
+            {
+                "condition": [
+                    "(pipelineinspection t51point)"
+                ],
+                "next": "step_84"
+            }
+        ]
+    },
+    "step_84": {
+        "actions": [
+            {
+                "name": "waypoint-following",
+                "arguments": [
+                    "auv",
+                    "t51point",
+                    "t52point",
+                    "ssssonar1",
+                    "ssssonar0"
+                ]
+            }
+        ],
+        "outcomes": [
+            {
+                "condition": [
+                    "(at auv t52point)"
+                ],
+                "next": "step_85"
+            }
+        ]
+    },
+    "step_85": {
+        "actions": [
+            {
+                "name": "obstacle-avoidance",
+                "arguments": [
+                    "auv",
+                    "t52point",
+                    "ssssonar0"
+                ]
+            }
+        ],
+        "outcomes": [
+            {
+                "condition": [
+                    "(at auv t52point)"
+                ],
+                "next": "step_85"
+            },
+            {
+                "condition": [
+                    "(pipelineinspection t52point)"
+                ],
+                "next": "step_86"
+            }
+        ]
+    },
+    "step_86": {
+        "actions": [
+            {
+                "name": "waypoint-following",
+                "arguments": [
+                    "auv",
+                    "t52point",
+                    "t53point",
+                    "ssssonar1",
+                    "ssssonar0"
+                ]
+            }
+        ],
+        "outcomes": [
+            {
+                "condition": [
+                    "(at auv t53point)"
+                ],
+                "next": "step_87"
+            }
+        ]
+    },
+    "step_87": {
+        "actions": [
+            {
+                "name": "obstacle-avoidance",
+                "arguments": [
+                    "auv",
+                    "t53point",
+                    "ssssonar0"
+                ]
+            }
+        ],
+        "outcomes": [
+            {
+                "condition": [
+                    "(at auv t53point)"
+                ],
+                "next": "step_87"
+            },
+            {
+                "condition": [
+                    "(pipelineinspection t53point)"
+                ],
+                "next": "step_88"
+            }
+        ]
+    },
+    "step_88": {
+        "actions": [
+            {
+                "name": "waypoint-following",
+                "arguments": [
+                    "auv",
+                    "t53point",
+                    "t54point",
+                    "ssssonar1",
+                    "ssssonar0"
+                ]
+            }
+        ],
+        "outcomes": [
+            {
+                "condition": [
+                    "(at auv t54point)"
+                ],
+                "next": "step_89"
+            }
+        ]
+    },
+    "step_89": {
+        "actions": [
+            {
+                "name": "obstacle-avoidance",
+                "arguments": [
+                    "auv",
+                    "t54point",
+                    "ssssonar0"
+                ]
+            }
+        ],
+        "outcomes": [
+            {
+                "condition": [
+                    "(at auv t54point)"
+                ],
+                "next": "step_89"
+            },
+            {
+                "condition": [
+                    "(pipelineinspection t54point)"
+                ],
+                "next": "step_90"
+            }
+        ]
+    },
+    "step_90": {
+        "actions": [
+            {
+                "name": "waypoint-following",
+                "arguments": [
+                    "auv",
+                    "t54point",
+                    "t55point",
+                    "ssssonar1",
+                    "ssssonar0"
+                ]
+            }
+        ],
+        "outcomes": [
+            {
+                "condition": [
+                    "(at auv t55point)"
+                ],
+                "next": "step_91"
+            }
+        ]
+    },
+    "step_91": {
+        "actions": [
+            {
+                "name": "obstacle-avoidance",
+                "arguments": [
+                    "auv",
+                    "t55point",
+                    "ssssonar0"
+                ]
+            }
+        ],
+        "outcomes": [
+            {
+                "condition": [
+                    "(at auv t55point)"
+                ],
+                "next": "step_91"
+            },
+            {
+                "condition": [
+                    "(pipelineinspection t55point)"
+                ],
+                "next": "step_92"
+            }
+        ]
+    },
+    "step_92": {
+        "actions": [
+            {
+                "name": "waypoint-following",
+                "arguments": [
+                    "auv",
+                    "t55point",
+                    "t56point",
+                    "ssssonar1",
+                    "ssssonar0"
+                ]
+            }
+        ],
+        "outcomes": [
+            {
+                "condition": [
+                    "(at auv t56point)"
+                ],
+                "next": "step_93"
+            }
+        ]
+    },
+    "step_93": {
+        "actions": [
+            {
+                "name": "obstacle-avoidance",
+                "arguments": [
+                    "auv",
+                    "t56point",
+                    "ssssonar0"
+                ]
+            }
+        ],
+        "outcomes": [
+            {
+                "condition": [
+                    "(at auv t56point)"
+                ],
+                "next": "step_93"
+            },
+            {
+                "condition": [
+                    "(pipelineinspection t56point)"
+                ],
+                "next": "step_94"
+            }
+        ]
+    },
+    "step_94": {
+        "actions": [
+            {
+                "name": "waypoint-following",
+                "arguments": [
+                    "auv",
+                    "t56point",
+                    "t57point",
+                    "ssssonar1",
+                    "ssssonar0"
+                ]
+            }
+        ],
+        "outcomes": [
+            {
+                "condition": [
+                    "(at auv t57point)"
+                ],
+                "next": "step_95"
+            }
+        ]
+    },
+    "step_95": {
+        "actions": [
+            {
+                "name": "obstacle-avoidance",
+                "arguments": [
+                    "auv",
+                    "t57point",
+                    "ssssonar0"
+                ]
+            }
+        ],
+        "outcomes": [
+            {
+                "condition": [
+                    "(at auv t57point)"
+                ],
+                "next": "step_95"
+            },
+            {
+                "condition": [
+                    "(pipelineinspection t57point)"
+                ],
+                "next": "step_96"
+            }
+        ]
+    },
+    "step_96": {
+        "actions": [
+            {
+                "name": "waypoint-following",
+                "arguments": [
+                    "auv",
+                    "t57point",
+                    "t58point",
+                    "ssssonar1",
+                    "ssssonar0"
+                ]
+            }
+        ],
+        "outcomes": [
+            {
+                "condition": [
+                    "(at auv t58point)"
+                ],
+                "next": "step_97"
+            }
+        ]
+    },
+    "step_97": {
+        "actions": [
+            {
+                "name": "obstacle-avoidance",
+                "arguments": [
+                    "auv",
+                    "t58point",
+                    "ssssonar0"
+                ]
+            }
+        ],
+        "outcomes": [
+            {
+                "condition": [
+                    "(at auv t58point)"
+                ],
+                "next": "step_97"
+            },
+            {
+                "condition": [
+                    "(pipelineinspection t58point)"
+                ],
+                "next": "step_98"
+            }
+        ]
+    },
+    "step_98": {
+        "actions": [
+            {
+                "name": "waypoint-following",
+                "arguments": [
+                    "auv",
+                    "t58point",
+                    "t59point",
+                    "ssssonar1",
+                    "ssssonar0"
+                ]
+            }
+        ],
+        "outcomes": [
+            {
+                "condition": [
+                    "(at auv t59point)"
+                ],
+                "next": "step_99"
+            }
+        ]
+    },
+    "step_99": {
+        "actions": [
+            {
+                "name": "obstacle-avoidance",
+                "arguments": [
+                    "auv",
+                    "t59point",
+                    "ssssonar0"
+                ]
+            }
+        ],
+        "outcomes": [
+            {
+                "condition": [
+                    "(at auv t59point)"
+                ],
+                "next": "step_99"
+            },
+            {
+                "condition": [
+                    "(pipelineinspection t59point)"
+                ],
+                "next": "step_100"
+            }
+        ]
+    },
+    "step_100": {
+        "actions": [
+            {
+                "name": "waypoint-following",
+                "arguments": [
+                    "auv",
+                    "t59point",
+                    "t60point",
+                    "ssssonar1",
+                    "ssssonar0"
+                ]
+            }
+        ],
+        "outcomes": [
+            {
+                "condition": [
+                    "(at auv t60point)"
+                ],
+                "next": "step_101"
+            }
+        ]
+    },
+    "step_101": {
+        "actions": [
+            {
+                "name": "obstacle-avoidance",
+                "arguments": [
+                    "auv",
+                    "t60point",
+                    "ssssonar0"
+                ]
+            }
+        ],
+        "outcomes": [
+            {
+                "condition": [
+                    "(at auv t60point)"
+                ],
+                "next": "step_101"
+            },
+            {
+                "condition": [
+                    "(pipelineinspection t60point)"
+                ],
+                "next": "step_102"
+            }
+        ]
+    },
+    "step_102": {
+        "actions": [
+            {
+                "name": "waypoint-following",
+                "arguments": [
+                    "auv",
+                    "t60point",
+                    "t61point",
+                    "ssssonar1",
+                    "ssssonar0"
+                ]
+            }
+        ],
+        "outcomes": [
+            {
+                "condition": [
+                    "(at auv t61point)"
+                ],
+                "next": "step_103"
+            }
+        ]
+    },
+    "step_103": {
+        "actions": [
+            {
+                "name": "obstacle-avoidance",
+                "arguments": [
+                    "auv",
+                    "t61point",
+                    "ssssonar0"
+                ]
+            }
+        ],
+        "outcomes": [
+            {
+                "condition": [
+                    "(at auv t61point)"
+                ],
+                "next": "step_103"
+            },
+            {
+                "condition": [
+                    "(pipelineinspection t61point)"
+                ],
+                "next": "step_104"
+            }
+        ]
+    },
+    "step_104": {
+        "actions": [
+            {
+                "name": "waypoint-following",
+                "arguments": [
+                    "auv",
+                    "t61point",
+                    "t62point",
+                    "ssssonar1",
+                    "ssssonar0"
+                ]
+            }
+        ],
+        "outcomes": [
+            {
+                "condition": [
+                    "(at auv t62point)"
+                ],
+                "next": "step_105"
+            }
+        ]
+    },
+    "step_105": {
+        "actions": [
+            {
+                "name": "obstacle-avoidance",
+                "arguments": [
+                    "auv",
+                    "t62point",
+                    "ssssonar0"
+                ]
+            }
+        ],
+        "outcomes": [
+            {
+                "condition": [
+                    "(at auv t62point)"
+                ],
+                "next": "step_105"
+            },
+            {
+                "condition": [
+                    "(pipelineinspection t62point)"
+                ],
+                "next": "step_106"
+            }
+        ]
+    },
+    "step_106": {
+        "actions": [
+            {
+                "name": "waypoint-following",
+                "arguments": [
+                    "auv",
+                    "t62point",
+                    "t63point",
+                    "ssssonar1",
+                    "ssssonar0"
+                ]
+            }
+        ],
+        "outcomes": [
+            {
+                "condition": [
+                    "(at auv t63point)"
+                ],
+                "next": "step_107"
+            }
+        ]
+    },
+    "step_107": {
+        "actions": [
+            {
+                "name": "obstacle-avoidance",
+                "arguments": [
+                    "auv",
+                    "t63point",
+                    "ssssonar0"
+                ]
+            }
+        ],
+        "outcomes": [
+            {
+                "condition": [
+                    "(at auv t63point)"
+                ],
+                "next": "step_107"
+            },
+            {
+                "condition": [
+                    "(pipelineinspection t63point)"
+                ],
+                "next": "step_108"
+            }
+        ]
+    },
+    "step_108": {
+        "actions": [
+            {
+                "name": "waypoint-following",
+                "arguments": [
+                    "auv",
+                    "t63point",
+                    "t64point",
+                    "ssssonar1",
+                    "ssssonar0"
+                ]
+            }
+        ],
+        "outcomes": [
+            {
+                "condition": [
+                    "(at auv t64point)"
+                ],
+                "next": "step_109"
+            }
+        ]
+    },
+    "step_109": {
+        "actions": [
+            {
+                "name": "obstacle-avoidance",
+                "arguments": [
+                    "auv",
+                    "t64point",
+                    "ssssonar0"
+                ]
+            }
+        ],
+        "outcomes": [
+            {
+                "condition": [
+                    "(at auv t64point)"
+                ],
+                "next": "step_109"
+            },
+            {
+                "condition": [
+                    "(pipelineinspection t64point)"
+                ],
+                "next": "step_110"
+            }
+        ]
+    },
+    "step_110": {
+        "actions": [
+            {
+                "name": "waypoint-following",
+                "arguments": [
+                    "auv",
+                    "t64point",
+                    "t65point",
+                    "ssssonar1",
+                    "ssssonar0"
+                ]
+            }
+        ],
+        "outcomes": [
+            {
+                "condition": [
+                    "(at auv t65point)"
+                ],
+                "next": "step_111"
+            }
+        ]
+    },
+    "step_111": {
+        "actions": [
+            {
+                "name": "obstacle-avoidance",
+                "arguments": [
+                    "auv",
+                    "t65point",
+                    "ssssonar0"
+                ]
+            }
+        ],
+        "outcomes": [
+            {
+                "condition": [
+                    "(at auv t65point)"
+                ],
+                "next": "step_111"
+            },
+            {
+                "condition": [
+                    "(pipelineinspection t65point)"
+                ],
+                "next": "step_112"
+            }
+        ]
+    },
+    "step_112": {
+        "actions": [
+            {
+                "name": "waypoint-following",
+                "arguments": [
+                    "auv",
+                    "t65point",
+                    "t66point",
+                    "ssssonar1",
+                    "ssssonar0"
+                ]
+            }
+        ],
+        "outcomes": [
+            {
+                "condition": [
+                    "(at auv t66point)"
+                ],
+                "next": "step_113"
+            }
+        ]
+    },
+    "step_113": {
+        "actions": [
+            {
+                "name": "obstacle-avoidance",
+                "arguments": [
+                    "auv",
+                    "t66point",
+                    "ssssonar0"
+                ]
+            }
+        ],
+        "outcomes": [
+            {
+                "condition": [
+                    "(at auv t66point)"
+                ],
+                "next": "step_113"
+            },
+            {
+                "condition": [
+                    "(pipelineinspection t66point)"
+                ],
+                "next": "step_114"
+            }
+        ]
+    },
+    "step_114": {
+        "actions": [
+            {
+                "name": "waypoint-following",
+                "arguments": [
+                    "auv",
+                    "t66point",
+                    "t67point",
+                    "ssssonar1",
+                    "ssssonar0"
+                ]
+            }
+        ],
+        "outcomes": [
+            {
+                "condition": [
+                    "(at auv t67point)"
+                ],
+                "next": "step_115"
+            }
+        ]
+    },
+    "step_115": {
+        "actions": [
+            {
+                "name": "obstacle-avoidance",
+                "arguments": [
+                    "auv",
+                    "t67point",
+                    "ssssonar0"
+                ]
+            }
+        ],
+        "outcomes": [
+            {
+                "condition": [
+                    "(at auv t67point)"
+                ],
+                "next": "step_115"
+            },
+            {
+                "condition": [
+                    "(pipelineinspection t67point)"
+                ],
+                "next": "step_116"
+            }
+        ]
+    },
+    "step_116": {
+        "actions": [
+            {
+                "name": "waypoint-following",
+                "arguments": [
+                    "auv",
+                    "t67point",
+                    "t68point",
+                    "ssssonar1",
+                    "ssssonar0"
+                ]
+            }
+        ],
+        "outcomes": [
+            {
+                "condition": [
+                    "(at auv t68point)"
+                ],
+                "next": "step_117"
+            }
+        ]
+    },
+    "step_117": {
+        "actions": [
+            {
+                "name": "obstacle-avoidance",
+                "arguments": [
+                    "auv",
+                    "t68point",
+                    "ssssonar0"
+                ]
+            }
+        ],
+        "outcomes": [
+            {
+                "condition": [
+                    "(at auv t68point)"
+                ],
+                "next": "step_117"
+            },
+            {
+                "condition": [
+                    "(pipelineinspection t68point)"
+                ],
+                "next": "step_118"
+            }
+        ]
+    },
+    "step_118": {
+        "actions": [
+            {
+                "name": "waypoint-following",
+                "arguments": [
+                    "auv",
+                    "t68point",
+                    "t69point",
+                    "ssssonar1",
+                    "ssssonar0"
+                ]
+            }
+        ],
+        "outcomes": [
+            {
+                "condition": [
+                    "(at auv t69point)"
+                ],
+                "next": "step_119"
+            }
+        ]
+    },
+    "step_119": {
+        "actions": [
+            {
+                "name": "obstacle-avoidance",
+                "arguments": [
+                    "auv",
+                    "t69point",
+                    "ssssonar0"
+                ]
+            }
+        ],
+        "outcomes": [
+            {
+                "condition": [
+                    "(at auv t69point)"
+                ],
+                "next": "step_119"
+            },
+            {
+                "condition": [
+                    "(pipelineinspection t69point)"
+                ],
+                "next": "step_120"
+            }
+        ]
+    },
+    "step_120": {
+        "actions": [
+            {
+                "name": "waypoint-following",
+                "arguments": [
+                    "auv",
+                    "t69point",
+                    "t70point",
+                    "ssssonar1",
+                    "ssssonar0"
+                ]
+            }
+        ],
+        "outcomes": [
+            {
+                "condition": [
+                    "(at auv t70point)"
+                ],
+                "next": "step_121"
+            }
+        ]
+    },
+    "step_121": {
+        "actions": [
+            {
+                "name": "obstacle-avoidance",
+                "arguments": [
+                    "auv",
+                    "t70point",
+                    "ssssonar0"
+                ]
+            }
+        ],
+        "outcomes": [
+            {
+                "condition": [
+                    "(at auv t70point)"
+                ],
+                "next": "step_121"
+            },
+            {
+                "condition": [
+                    "(pipelineinspection t70point)"
+                ],
+                "next": "step_122"
+            }
+        ]
+    },
+    "step_122": {
+        "actions": [
+            {
+                "name": "waypoint-following",
+                "arguments": [
+                    "auv",
+                    "t70point",
+                    "oilleakagepoint",
+                    "ssssonar1",
+                    "ssssonar0"
+                ]
+            }
+        ],
+        "outcomes": [
+            {
+                "condition": [
+                    "(at auv oilleakagepoint)"
+                ],
+                "next": "step_123"
+            }
+        ]
+    },
+    "step_123": {
+        "actions": [
+            {
+                "name": "obstacle-avoidance",
+                "arguments": [
+                    "auv",
+                    "oilleakagepoint",
+                    "ssssonar0"
+                ]
+            }
+        ],
+        "outcomes": [
+            {
+                "condition": [
+                    "(at auv oilleakagepoint)"
+                ],
+                "next": "step_123"
+            },
+            {
+                "condition": [
+                    "(pipelineinspection oilleakagepoint)"
+                ],
+                "next": "step_124"
+            }
+        ]
+    },
+    "step_124": {
+        "actions": [
+            {
+                "name": "waypoint-following",
+                "arguments": [
+                    "auv",
+                    "oilleakagepoint",
+                    "middletopoint",
+                    "ssssonar1",
+                    "ssssonar0"
+                ]
+            }
+        ],
+        "outcomes": [
+            {
+                "condition": [
+                    "(at auv middletopoint)"
+                ],
+                "next": "step_125"
+            }
+        ]
+    },
+    "step_125": {
+        "actions": [
+            {
+                "name": "waypoint-following",
+                "arguments": [
+                    "auv",
+                    "middletopoint",
+                    "finalpoint",
+                    "ssssonar1",
+                    "ssssonar0"
+                ]
+            }
+        ],
+        "outcomes": [
+            {
+                "condition": [
+                    "(at auv finalpoint)"
+                ],
+                "next": "GOAL"
+            }
+        ]
+    }
+}

@@ -10,7 +10,7 @@
         harmlessPoint - waypoint
         middlePoint - waypoint
         middletoPoint - waypoint
-         t7Point - waypoint
+        t7Point - waypoint
         t8Point - waypoint
         t9Point - waypoint
         t10Point - waypoint
@@ -54,6 +54,36 @@
         t48Point - waypoint
         t49Point - waypoint
         t50Point - waypoint
+        t51Point - waypoint
+        t52Point - waypoint
+        t53Point - waypoint
+        t54Point - waypoint
+        t55Point - waypoint
+        t56Point - waypoint
+        t57Point - waypoint
+        t58Point - waypoint
+        t59Point - waypoint
+        t60Point - waypoint
+        t61Point - waypoint
+        t62Point - waypoint
+        t63Point - waypoint
+        t64Point - waypoint
+        t65Point - waypoint
+        t66Point - waypoint
+        t67Point - waypoint
+        t68Point - waypoint
+        t69Point - waypoint
+        t70Point - waypoint
+        t71Point - waypoint
+        t72Point - waypoint
+        t73Point - waypoint
+        t74Point - waypoint
+        t75Point - waypoint
+        t76Point - waypoint
+        t77Point - waypoint
+        t78Point - waypoint
+        t79Point - waypoint
+        t80Point - waypoint
 
 
     )
@@ -125,6 +155,36 @@
         (pipelineInspection t48Point)
         (pipelineInspection t49Point)
         (pipelineInspection t50Point)
+        (pipelineInspection t51Point)
+        (pipelineInspection t52Point)
+        (pipelineInspection t53Point)
+        (pipelineInspection t54Point)
+        (pipelineInspection t55Point)
+        (pipelineInspection t56Point)
+        (pipelineInspection t57Point)
+        (pipelineInspection t58Point)
+        (pipelineInspection t59Point)
+        (pipelineInspection t60Point)
+        (pipelineInspection t61Point)
+        (pipelineInspection t62Point)
+        (pipelineInspection t63Point)
+        (pipelineInspection t64Point)
+        (pipelineInspection t65Point)
+        (pipelineInspection t66Point)
+        (pipelineInspection t67Point)
+        (pipelineInspection t68Point)
+        (pipelineInspection t69Point)
+        (pipelineInspection t70Point)
+        (pipelineInspection t71Point)
+        (pipelineInspection t72Point)
+        (pipelineInspection t73Point)
+        (pipelineInspection t74Point)
+        (pipelineInspection t75Point)
+        (pipelineInspection t76Point)
+        (pipelineInspection t77Point)
+        (pipelineInspection t78Point)
+        (pipelineInspection t79Point)
+        (pipelineInspection t80Point)
     )
 
 )

@@ -1,0 +1,12 @@
+{
+    "planning_time": 0.405,
+    "compilation_time": 0.007,
+    "planning_call_singlesoutcome": 3,
+    "planning_call_alloutcome": 3,
+    "unsolvable_states": 1,
+    "solvable": true,
+    "policy_length": 126,
+    "plan_length": 126,
+    "deterministic_domains": 1,
+    "arguments": "-c ff m fd -j -d -p --all-outcome -s -v 2"
+}
