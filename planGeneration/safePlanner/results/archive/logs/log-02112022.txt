@@ -1,0 +1,181 @@
+./sp benchmarks/domains/miniAUVAbstract.pddl -j -d -p --all-outcome -v 2
+
+[Compilation to non-deterministic domains]
+1 deterministic domains generated in '/tmp/safe-planner/miniauv1667355575606051/'
+
+(0:0 replanning) (0 unsolvable states) [0.000 s]
+
+-- expand the initial state
+    -- problem:/tmp/safe-planner/miniauv1667355575606051/prob1667355575609981.pddl
+    -- domain:/tmp/safe-planner/miniauv1667355575606051/prob1667355575610219.pddl
+
+-- planner stdout
+
+ff: parsing domain file
+domain 'MINIAUV' defined
+ ... done.
+ff: parsing problem file
+problem 'NAVIGATIONMINIAUV' defined
+ ... done.
+
+
+
+Cueing down from goal distance:    2 into depth [1]
+                                   1            [1]
+                                   0            
+
+Cueing down from goal distance:    2 into depth [1]
+                                   1            [1]
+                                   0            
+
+ff: found legal plan as follows
+
+step    0: DRIVE_3 AUV STARTPOINT PHOTOPOINT BACKTHRUSTER RGBCAMERA
+        1: TAKE-PHOTO_0 AUV PHOTOPOINT RGBCAMERA
+        2: DRIVE_2 AUV PHOTOPOINT STARTPOINT BACKTHRUSTER RGBCAMERA
+        3: DRIVE_3 AUV STARTPOINT ENDPOINT BACKTHRUSTER RGBCAMERA
+     
+
+time spent:    0.00 seconds instantiating 42 easy, 0 hard action templates
+               0.00 seconds reachability analysis, yielding 8 facts and 42 actions
+               0.00 seconds creating final representation with 8 relevant facts
+               0.00 seconds building connectivity graph
+               0.00 seconds searching, evaluating 6 states, to a max depth of 1
+               0.00 seconds total time
+
+
+            (drive_3 auv startpoint photopoint backthruster rgbcamera) 🗸
+            (take-photo_0 auv photopoint rgbcamera) 🗸
+            (drive_2 auv photopoint startpoint backthruster rgbcamera) 🗸
+            (drive_3 auv startpoint endpoint backthruster rgbcamera) 🗸
+
+(1:1 replanning) (0 unsolvable states) [0.006 s]
+
+-- expand an open terminal state produced by: (drive_3 auv startpoint photopoint backthruster rgbcamera)
+    -- problem:/tmp/safe-planner/miniauv1667355575606051/prob1667355575615985.pddl
+    -- domain:/tmp/safe-planner/miniauv1667355575606051/prob1667355575616187.pddl
+
+-- planner stdout
+
+ff: parsing domain file
+domain 'MINIAUV' defined
+ ... done.
+ff: parsing problem file
+problem 'NAVIGATIONMINIAUV' defined
+ ... done.
+
+
+
+Cueing down from goal distance:    1 into depth [1]
+                                   0            
+
+Cueing down from goal distance:    2 into depth [1]
+                                   1            [1]
+                                   0            
+
+ff: found legal plan as follows
+
+step    0: TAKE-PHOTO_0 AUV PHOTOPOINT RGBCAMERA
+        1: DRIVE_3 AUV PHOTOPOINT STARTPOINT BACKTHRUSTER RGBCAMERA
+        2: DRIVE_3 AUV STARTPOINT ENDPOINT BACKTHRUSTER RGBCAMERA
+     
+
+time spent:    0.00 seconds instantiating 42 easy, 0 hard action templates
+               0.00 seconds reachability analysis, yielding 8 facts and 42 actions
+               0.00 seconds creating final representation with 7 relevant facts
+               0.00 seconds building connectivity graph
+               0.00 seconds searching, evaluating 5 states, to a max depth of 1
+               0.00 seconds total time
+
+
+            (take-photo_0 auv photopoint rgbcamera) 🗸
+            (drive_3 auv photopoint startpoint backthruster rgbcamera) 🗸
+            (drive_3 auv startpoint endpoint backthruster rgbcamera) 🗸
+
+(2:2 replanning) (0 unsolvable states) [0.011 s]
+
+-- no more open terminal states 🖒
+@ PLAN
+ 0 : {(drive auv startpoint photopoint backthruster rgbcamera)} -- {(at auv photopoint)} \ {(at auv startpoint)} 1 -- {(at auv photopoint)(brokencamera rgbcamera)} \ {(at auv startpoint)} 2
+ 1 : {(take-photo auv photopoint rgbcamera)} -- {(hasphoto photopoint)} 3 -- {(at auv photopoint)} 1
+ 2 : {(take-photo auv photopoint rgbcamera)} -- {(hasphoto photopoint)} 4 -- {(at auv photopoint)} 2
+ 3 : {(drive auv photopoint startpoint backthruster rgbcamera)} -- {(at auv startpoint)} \ {(at auv photopoint)} 5
+ 4 : {(drive auv photopoint startpoint backthruster rgbcamera)} -- {(at auv startpoint)} \ {(at auv photopoint)} 6
+ 5 : {(drive auv startpoint endpoint backthruster rgbcamera)} -- {(at auv endpoint)} \ {(at auv startpoint)} GOAL
+ 6 : {(drive auv startpoint endpoint backthruster rgbcamera)} -- {(at auv endpoint)} \ {(at auv startpoint)} GOAL
+
+@ SUBPATHS
+-- path1 (4)
+ 0 : (drive auv startpoint photopoint backthruster rgbcamera) -- ((at auv photopoint))((at auv startpoint)) 1
+ 1 : (take-photo auv photopoint rgbcamera) -- ((hasphoto photopoint)) 3
+ 3 : (drive auv photopoint startpoint backthruster rgbcamera) -- ((at auv startpoint))((at auv photopoint)) 5
+ 5 : (drive auv startpoint endpoint backthruster rgbcamera) -- ((at auv endpoint))((at auv startpoint)) GOAL
+
+-- path2 (1)
+ 1 : (take-photo auv photopoint rgbcamera) -- ((at auv photopoint)) 1
+
+-- path3 (4)
+ 0 : (drive auv startpoint photopoint backthruster rgbcamera) -- ((at auv photopoint) (brokencamera rgbcamera))((at auv startpoint)) 2
+ 2 : (take-photo auv photopoint rgbcamera) -- ((hasphoto photopoint)) 4
+ 4 : (drive auv photopoint startpoint backthruster rgbcamera) -- ((at auv startpoint))((at auv photopoint)) 6
+ 6 : (drive auv startpoint endpoint backthruster rgbcamera) -- ((at auv endpoint))((at auv startpoint)) GOAL
+
+-- path4 (1)
+ 2 : (take-photo auv photopoint rgbcamera) -- ((at auv photopoint)) 2
+
+-- path1 dot file: /tmp/safe-planner/prob1667355575623902.dot
+-- path2 dot file: /tmp/safe-planner/prob1667355575624112.dot
+-- path3 dot file: /tmp/safe-planner/prob1667355575624626.dot
+-- path4 dot file: /tmp/safe-planner/prob1667355575624998.dot
+
+-- dot file: ../benchmarks/domains/miniAUVAbstract.dot
+
+[EXPERIMENTAL JSON PLAN!]
+[APPLIED ONLY TO THE FIRST PRE-ORDER PATH OF THE PLAN]
+@ PLAN
+ 0 : {(drive auv startpoint photopoint backthruster rgbcamera)} -- {(at auv photopoint)} 1
+ 1 : {(take-photo auv photopoint rgbcamera)} -- {(hasphoto photopoint)} 3
+ 3 : {(drive auv photopoint startpoint backthruster rgbcamera)} -- {(at auv startpoint)} 5
+ 5 : {(drive auv startpoint endpoint backthruster rgbcamera)} -- {(at auv endpoint)} GOAL
+
+-- plan_json_file:../benchmarks/domains/miniAUVAbstract.plan.json [EXPERIMENTAL!]
+-- actions_json_file:../benchmarks/domains/miniAUVAbstract.actions.json [EXPERIMENTAL!]
+-- plan_json_dot_file:../benchmarks/domains/miniAUVAbstract.plan.json.dot [EXPERIMENTAL!]
+strict digraph "" {
+	graph [fontname=helvetica];
+	node [fontname=helvetica,
+		label="\N",
+		shape=ellipse
+	];
+	edge [fontname=helvetica];
+	"(end)"	[label=end,
+		peripheries=2,
+		shape=circle];
+	"(take-photo auv photopoint rgbcamera)" -> "(end)";
+	"(start)"	[label=start,
+		peripheries=1,
+		shape=circle];
+	"(drive auv startpoint photopoint backthruster rgbcamera)"	[color=lightgrey,
+		style=filled];
+	"(start)" -> "(drive auv startpoint photopoint backthruster rgbcamera)";
+	"(drive auv startpoint endpoint backthruster rgbcamera)"	[color=lightgrey,
+		style=filled];
+	"(start)" -> "(drive auv startpoint endpoint backthruster rgbcamera)";
+}
+
+-- graphviz file: ../benchmarks/domains/miniAUVAbstract.gv
+-- transitive reduction: ../benchmarks/domains/miniAUVAbstract.tred.gv
+
+-- json file: ../benchmarks/domains/miniAUVAbstract.json [EXPERIMENTAL!]
+-- try: lua json_plan.lua ../benchmarks/domains/miniAUVAbstract.json [EXPERIMENTAL!]
+
+Planning problem: ../benchmarks/domains/miniAUVAbstract.pddl
+Arguments: -j -d -p --all-outcome -v 2
+Policy length: 7
+Plan length: 7
+Compilation time: 0.004 s [1 domains]
+Planning time: 0.012 s
+Planning iterations (all-outcome): 2
+Total number of replannings (single-outcome): 2
+Total number of unsolvable states: 0
+

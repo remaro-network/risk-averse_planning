@@ -1,0 +1,16 @@
+digraph defaultname {
+	graph []
+	node []
+	edge []
+
+		subgraph cluster_main {
+			graph [color=black fillcolor=white label=main]
+			node [style=filled fillcolor=orange]
+			edge []
+				drive_auv_startpoint_endpoint_backthruster_rgbcamera [label="drive_auv_startpoint_endpoint_backthruster_rgbcamera"]
+				drive_auv_endpoint_photopoint_backthruster_rgbcamera [label="drive_auv_endpoint_photopoint_backthruster_rgbcamera"]
+				take-photo_auv_photopoint_rgbcamera [label="take-photo_auv_photopoint_rgbcamera"]
+		}
+			drive_auv_startpoint_endpoint_backthruster_rgbcamera -> drive_auv_endpoint_photopoint_backthruster_rgbcamera
+			drive_auv_endpoint_photopoint_backthruster_rgbcamera -> take-photo_auv_photopoint_rgbcamera
+}

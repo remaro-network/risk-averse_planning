@@ -1,0 +1,123 @@
+{
+    "plan": [
+        "step_0",
+        "step_1",
+        "step_2",
+        "step_3",
+        "step_4"
+    ],
+    "step_0": {
+        "actions": [
+            {
+                "name": "drive",
+                "arguments": [
+                    "auv",
+                    "startpoint",
+                    "endpoint",
+                    "backthruster",
+                    "rgbcamera"
+                ]
+            }
+        ],
+        "outcomes": [
+            {
+                "condition": [
+                    "(at auv endpoint)"
+                ],
+                "next": "step_1"
+            }
+        ]
+    },
+    "step_1": {
+        "actions": [
+            {
+                "name": "drive",
+                "arguments": [
+                    "auv",
+                    "endpoint",
+                    "photopoint",
+                    "backthruster",
+                    "rgbcamera"
+                ]
+            }
+        ],
+        "outcomes": [
+            {
+                "condition": [
+                    "(at auv photopoint)"
+                ],
+                "next": "step_2"
+            }
+        ]
+    },
+    "step_2": {
+        "actions": [
+            {
+                "name": "take-photo",
+                "arguments": [
+                    "auv",
+                    "photopoint",
+                    "rgbcamera"
+                ]
+            }
+        ],
+        "outcomes": [
+            {
+                "condition": [
+                    "(at auv photopoint)"
+                ],
+                "next": "step_2"
+            },
+            {
+                "condition": [
+                    "(hasphoto photopoint)"
+                ],
+                "next": "step_3"
+            }
+        ]
+    },
+    "step_3": {
+        "actions": [
+            {
+                "name": "drive",
+                "arguments": [
+                    "auv",
+                    "photopoint",
+                    "startpoint",
+                    "backthruster",
+                    "rgbcamera"
+                ]
+            }
+        ],
+        "outcomes": [
+            {
+                "condition": [
+                    "(at auv startpoint)"
+                ],
+                "next": "step_4"
+            }
+        ]
+    },
+    "step_4": {
+        "actions": [
+            {
+                "name": "drive",
+                "arguments": [
+                    "auv",
+                    "startpoint",
+                    "endpoint",
+                    "backthruster",
+                    "rgbcamera"
+                ]
+            }
+        ],
+        "outcomes": [
+            {
+                "condition": [
+                    "(at auv endpoint)"
+                ],
+                "next": "GOAL"
+            }
+        ]
+    }
+}

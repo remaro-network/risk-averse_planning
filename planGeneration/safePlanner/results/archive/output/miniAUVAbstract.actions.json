@@ -1,0 +1,76 @@
+{
+    "drive_auv_startpoint_photopoint_backthruster_rgbcamera": {
+        "name": "drive",
+        "args": [
+            "auv",
+            "startpoint",
+            "photopoint",
+            "backthruster",
+            "rgbcamera"
+        ],
+        "pre": {},
+        "per": {
+            "at": [
+                "auv",
+                "startpoint"
+            ]
+        },
+        "add": {},
+        "del": {}
+    },
+    "take-photo_auv_photopoint_rgbcamera": {
+        "name": "take-photo",
+        "args": [
+            "auv",
+            "photopoint",
+            "rgbcamera"
+        ],
+        "pre": {},
+        "per": {
+            "at": [
+                "auv",
+                "photopoint"
+            ]
+        },
+        "add": {},
+        "del": {}
+    },
+    "drive_auv_photopoint_startpoint_backthruster_rgbcamera": {
+        "name": "drive",
+        "args": [
+            "auv",
+            "photopoint",
+            "startpoint",
+            "backthruster",
+            "rgbcamera"
+        ],
+        "pre": {},
+        "per": {
+            "at": [
+                "auv",
+                "photopoint"
+            ]
+        },
+        "add": {},
+        "del": {}
+    },
+    "drive_auv_startpoint_endpoint_backthruster_rgbcamera": {
+        "name": "drive",
+        "args": [
+            "auv",
+            "startpoint",
+            "endpoint",
+            "backthruster",
+            "rgbcamera"
+        ],
+        "pre": {},
+        "per": {
+            "at": [
+                "auv",
+                "startpoint"
+            ]
+        },
+        "add": {},
+        "del": {}
+    }
+}

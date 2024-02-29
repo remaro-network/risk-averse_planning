@@ -1,0 +1,9 @@
+digraph Struc {
+ graph [fontname = "helvetica"];
+ node [fontname = "helvetica"];
+ edge [fontname = "helvetica"];
+ node [shape=ellipse];
+ packMode="graph";
+ n2 [label="(take-photo auv photopoint rgbcamera)"];
+ n2->n2 [fontsize=12, label="+ (at auv photopoint)"];
+}

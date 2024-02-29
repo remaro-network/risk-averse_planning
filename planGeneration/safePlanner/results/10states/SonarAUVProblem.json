@@ -1,0 +1,379 @@
+{
+    "plan": [
+        "step_0",
+        "step_1",
+        "step_2",
+        "step_3",
+        "step_4",
+        "step_5",
+        "step_6",
+        "step_7",
+        "step_8",
+        "step_9",
+        "step_10",
+        "step_11",
+        "step_12"
+    ],
+    "step_0": {
+        "actions": [
+            {
+                "name": "waypoint-following",
+                "arguments": [
+                    "auv",
+                    "initialpoint",
+                    "middlepoint",
+                    "ssssonar1",
+                    "ssssonar0"
+                ]
+            }
+        ],
+        "outcomes": [
+            {
+                "condition": [
+                    "(at auv middlepoint)"
+                ],
+                "next": "step_1"
+            }
+        ]
+    },
+    "step_1": {
+        "actions": [
+            {
+                "name": "obstacle-avoidance",
+                "arguments": [
+                    "auv",
+                    "middlepoint",
+                    "ssssonar0"
+                ]
+            }
+        ],
+        "outcomes": [
+            {
+                "condition": [
+                    "(pipelineinspection middlepoint)"
+                ],
+                "next": "step_2"
+            },
+            {
+                "condition": [
+                    "(verticalinspection middlepoint)"
+                ],
+                "next": "step_3"
+            },
+            {
+                "condition": [
+                    "(verticalinspection middlepoint)",
+                    "(pipelineinspection middlepoint)"
+                ],
+                "next": "step_4"
+            }
+        ]
+    },
+    "step_2": {
+        "actions": [
+            {
+                "name": "obstacle-avoidance",
+                "arguments": [
+                    "auv",
+                    "middlepoint",
+                    "ssssonar0"
+                ]
+            }
+        ],
+        "outcomes": [
+            {
+                "condition": [
+                    "(pipelineinspection middlepoint)"
+                ],
+                "next": "step_2"
+            },
+            {
+                "condition": [
+                    "(verticalinspection middlepoint)",
+                    "(pipelineinspection middlepoint)"
+                ],
+                "next": "step_4"
+            }
+        ]
+    },
+    "step_3": {
+        "actions": [
+            {
+                "name": "waypoint-following",
+                "arguments": [
+                    "auv",
+                    "middlepoint",
+                    "oilleakagepoint",
+                    "ssssonar1",
+                    "ssssonar0"
+                ]
+            }
+        ],
+        "outcomes": [
+            {
+                "condition": [
+                    "(at auv oilleakagepoint)"
+                ],
+                "next": "step_5"
+            }
+        ]
+    },
+    "step_4": {
+        "actions": [
+            {
+                "name": "waypoint-following",
+                "arguments": [
+                    "auv",
+                    "middlepoint",
+                    "oilleakagepoint",
+                    "ssssonar1",
+                    "ssssonar0"
+                ]
+            }
+        ],
+        "outcomes": [
+            {
+                "condition": [
+                    "(at auv oilleakagepoint)"
+                ],
+                "next": "step_6"
+            }
+        ]
+    },
+    "step_5": {
+        "actions": [
+            {
+                "name": "obstacle-avoidance",
+                "arguments": [
+                    "auv",
+                    "oilleakagepoint",
+                    "ssssonar0"
+                ]
+            }
+        ],
+        "outcomes": [
+            {
+                "condition": [
+                    "(pipelineinspection oilleakagepoint)"
+                ],
+                "next": "step_7"
+            },
+            {
+                "condition": [
+                    "(verticalinspection oilleakagepoint)"
+                ],
+                "next": "step_8"
+            },
+            {
+                "condition": [
+                    "(verticalinspection oilleakagepoint)",
+                    "(pipelineinspection oilleakagepoint)"
+                ],
+                "next": "step_9"
+            }
+        ]
+    },
+    "step_6": {
+        "actions": [
+            {
+                "name": "obstacle-avoidance",
+                "arguments": [
+                    "auv",
+                    "oilleakagepoint",
+                    "ssssonar0"
+                ]
+            }
+        ],
+        "outcomes": [
+            {
+                "condition": [
+                    "(pipelineinspection oilleakagepoint)"
+                ],
+                "next": "step_10"
+            },
+            {
+                "condition": [
+                    "(verticalinspection oilleakagepoint)"
+                ],
+                "next": "step_11"
+            },
+            {
+                "condition": [
+                    "(verticalinspection oilleakagepoint)",
+                    "(pipelineinspection oilleakagepoint)"
+                ],
+                "next": "step_12"
+            }
+        ]
+    },
+    "step_7": {
+        "actions": [
+            {
+                "name": "waypoint-following",
+                "arguments": [
+                    "auv",
+                    "oilleakagepoint",
+                    "finalpoint",
+                    "ssssonar1",
+                    "ssssonar0"
+                ]
+            }
+        ],
+        "outcomes": [
+            {
+                "condition": [
+                    "(at auv finalpoint)"
+                ],
+                "next": "GOAL"
+            },
+            {
+                "condition": [
+                    "(outofrangesonar1 ssssonar1)",
+                    "(at auv finalpoint)"
+                ],
+                "next": "GOAL"
+            }
+        ]
+    },
+    "step_8": {
+        "actions": [
+            {
+                "name": "obstacle-avoidance",
+                "arguments": [
+                    "auv",
+                    "oilleakagepoint",
+                    "ssssonar0"
+                ]
+            }
+        ],
+        "outcomes": [
+            {
+                "condition": [
+                    "(verticalinspection oilleakagepoint)",
+                    "(pipelineinspection oilleakagepoint)"
+                ],
+                "next": "step_9"
+            },
+            {
+                "condition": [
+                    "(verticalinspection oilleakagepoint)"
+                ],
+                "next": "step_8"
+            }
+        ]
+    },
+    "step_9": {
+        "actions": [
+            {
+                "name": "waypoint-following",
+                "arguments": [
+                    "auv",
+                    "oilleakagepoint",
+                    "finalpoint",
+                    "ssssonar1",
+                    "ssssonar0"
+                ]
+            }
+        ],
+        "outcomes": [
+            {
+                "condition": [
+                    "(at auv finalpoint)"
+                ],
+                "next": "GOAL"
+            },
+            {
+                "condition": [
+                    "(outofrangesonar1 ssssonar1)",
+                    "(at auv finalpoint)"
+                ],
+                "next": "GOAL"
+            }
+        ]
+    },
+    "step_10": {
+        "actions": [
+            {
+                "name": "waypoint-following",
+                "arguments": [
+                    "auv",
+                    "oilleakagepoint",
+                    "finalpoint",
+                    "ssssonar1",
+                    "ssssonar0"
+                ]
+            }
+        ],
+        "outcomes": [
+            {
+                "condition": [
+                    "(at auv finalpoint)"
+                ],
+                "next": "GOAL"
+            },
+            {
+                "condition": [
+                    "(outofrangesonar1 ssssonar1)",
+                    "(at auv finalpoint)"
+                ],
+                "next": "GOAL"
+            }
+        ]
+    },
+    "step_11": {
+        "actions": [
+            {
+                "name": "obstacle-avoidance",
+                "arguments": [
+                    "auv",
+                    "oilleakagepoint",
+                    "ssssonar0"
+                ]
+            }
+        ],
+        "outcomes": [
+            {
+                "condition": [
+                    "(verticalinspection oilleakagepoint)",
+                    "(pipelineinspection oilleakagepoint)"
+                ],
+                "next": "step_12"
+            },
+            {
+                "condition": [
+                    "(verticalinspection oilleakagepoint)"
+                ],
+                "next": "step_11"
+            }
+        ]
+    },
+    "step_12": {
+        "actions": [
+            {
+                "name": "waypoint-following",
+                "arguments": [
+                    "auv",
+                    "oilleakagepoint",
+                    "finalpoint",
+                    "ssssonar1",
+                    "ssssonar0"
+                ]
+            }
+        ],
+        "outcomes": [
+            {
+                "condition": [
+                    "(at auv finalpoint)"
+                ],
+                "next": "GOAL"
+            },
+            {
+                "condition": [
+                    "(outofrangesonar1 ssssonar1)",
+                    "(at auv finalpoint)"
+                ],
+                "next": "GOAL"
+            }
+        ]
+    }
+}

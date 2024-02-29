@@ -1,0 +1,23 @@
+digraph Struc {
+ graph [fontname = "helvetica"];
+ node [fontname = "helvetica"];
+ edge [fontname = "helvetica"];
+ node [shape=ellipse];
+ packMode="graph";
+ n0 [label="(waypoint-following auv initialpoint harmlesspoint ssssonar1 ssssonar0)"];
+ n0->n1 [fontsize=12, label="+ (at auv harmlesspoint)\n- (at auv initialpoint)"];
+ n1 [label="(waypoint-following auv harmlesspoint oilleakagepoint ssssonar1 ssssonar0)"];
+ n1->n2 [fontsize=12, label="+ (at auv oilleakagepoint)\n- (at auv harmlesspoint)"];
+ n2 [style=filled, color=lightgrey, label="(obstacle-avoidance auv oilleakagepoint ssssonar0)"];
+ n2->n3 [fontsize=12, label="+ (pipelineinspection oilleakagepoint)"];
+ n2->n2 [fontsize=12, label="+ (at auv oilleakagepoint)\n- (outofrangesonar0 ssssonar0)"];
+ n3 [style=filled, color=lightgrey, label="(waypoint-following auv oilleakagepoint middlepoint ssssonar1 ssssonar0)"];
+ n3->n4 [fontsize=12, label="+ (at auv middlepoint)\n- (at auv oilleakagepoint)"];
+ n3->n5 [fontsize=12, label="+ (at auv middlepoint) (outofrangesonar0 ssssonar0)\n- (at auv oilleakagepoint)"];
+ n4 [label="(waypoint-following auv middlepoint finalpoint ssssonar1 ssssonar0)"];
+ n4->n6 [fontsize=12, label="+ (at auv finalpoint)\n- (at auv middlepoint)"];
+ n5 [label="(waypoint-following auv middlepoint finalpoint ssssonar1 ssssonar0)"];
+ n5->n7 [fontsize=12, label="+ (at auv finalpoint)\n- (at auv middlepoint)"];
+ n6 [shape=circle,label="",peripheries=2];
+ n7 [shape=circle,label="",peripheries=2];
+}

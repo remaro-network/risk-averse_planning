@@ -1,0 +1,123 @@
+{
+    "plan": [
+        "step_0",
+        "step_1",
+        "step_2",
+        "step_3",
+        "step_4"
+    ],
+    "step_0": {
+        "actions": [
+            {
+                "name": "waypoint-following",
+                "arguments": [
+                    "auv",
+                    "initialpoint",
+                    "finalpoint",
+                    "ssssonar1",
+                    "ssssonar0"
+                ]
+            }
+        ],
+        "outcomes": [
+            {
+                "condition": [
+                    "(at auv finalpoint)"
+                ],
+                "next": "step_1"
+            }
+        ]
+    },
+    "step_1": {
+        "actions": [
+            {
+                "name": "waypoint-following",
+                "arguments": [
+                    "auv",
+                    "finalpoint",
+                    "oilleakagepoint",
+                    "ssssonar1",
+                    "ssssonar0"
+                ]
+            }
+        ],
+        "outcomes": [
+            {
+                "condition": [
+                    "(at auv oilleakagepoint)"
+                ],
+                "next": "step_2"
+            }
+        ]
+    },
+    "step_2": {
+        "actions": [
+            {
+                "name": "obstacle-avoidance",
+                "arguments": [
+                    "auv",
+                    "oilleakagepoint",
+                    "ssssonar0"
+                ]
+            }
+        ],
+        "outcomes": [
+            {
+                "condition": [
+                    "(pipelineinspection oilleakagepoint)"
+                ],
+                "next": "step_3"
+            },
+            {
+                "condition": [
+                    "(at auv oilleakagepoint)"
+                ],
+                "next": "step_2"
+            }
+        ]
+    },
+    "step_3": {
+        "actions": [
+            {
+                "name": "waypoint-following",
+                "arguments": [
+                    "auv",
+                    "oilleakagepoint",
+                    "initialpoint",
+                    "ssssonar1",
+                    "ssssonar0"
+                ]
+            }
+        ],
+        "outcomes": [
+            {
+                "condition": [
+                    "(at auv initialpoint)"
+                ],
+                "next": "step_4"
+            }
+        ]
+    },
+    "step_4": {
+        "actions": [
+            {
+                "name": "waypoint-following",
+                "arguments": [
+                    "auv",
+                    "initialpoint",
+                    "finalpoint",
+                    "ssssonar1",
+                    "ssssonar0"
+                ]
+            }
+        ],
+        "outcomes": [
+            {
+                "condition": [
+                    "(at auv finalpoint)"
+                ],
+                "next": "GOAL"
+            }
+        ]
+    }
+}

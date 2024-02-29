@@ -1,0 +1,19 @@
+digraph Struc {
+ graph [fontname = "helvetica"];
+ node [fontname = "helvetica"];
+ edge [fontname = "helvetica"];
+ node [shape=ellipse];
+ packMode="graph";
+ n0 [label="(drive auv startpoint endpoint backthruster rgbcamera)"];
+ n0->n1 [fontsize=12, label="+ (at auv endpoint)\n- (at auv startpoint)"];
+ n1 [label="(drive auv endpoint photopoint backthruster rgbcamera)"];
+ n1->n2 [fontsize=12, label="+ (at auv photopoint)\n- (at auv endpoint)"];
+ n2 [style=filled, color=lightgrey, label="(take-photo auv photopoint rgbcamera)"];
+ n2->n2 [fontsize=12, label="+ (at auv photopoint)\n- (brokencamera rgbcamera)"];
+ n2->n3 [fontsize=12, label="+ (hasphoto photopoint)"];
+ n3 [label="(drive auv photopoint startpoint backthruster rgbcamera)"];
+ n3->n4 [fontsize=12, label="+ (at auv startpoint)\n- (at auv photopoint)"];
+ n4 [label="(drive auv startpoint endpoint backthruster rgbcamera)"];
+ n4->n5 [fontsize=12, label="+ (at auv endpoint)\n- (at auv startpoint)"];
+ n5 [shape=circle,label="",peripheries=2];
+}

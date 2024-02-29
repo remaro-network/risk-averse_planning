@@ -1,0 +1,17 @@
+{
+    "main": {
+        "list": [
+            "drive_auv_startpoint_photopoint_backthruster_rgbcamera",
+            "take-photo_auv_photopoint_rgbcamera",
+            "drive_auv_photopoint_startpoint_backthruster_rgbcamera",
+            "drive_auv_startpoint_endpoint_backthruster_rgbcamera"
+        ],
+        "ordering": "total"
+    },
+    "actions": [
+        "drive_auv_startpoint_photopoint_backthruster_rgbcamera",
+        "take-photo_auv_photopoint_rgbcamera",
+        "drive_auv_photopoint_startpoint_backthruster_rgbcamera",
+        "drive_auv_startpoint_endpoint_backthruster_rgbcamera"
+    ]
+}

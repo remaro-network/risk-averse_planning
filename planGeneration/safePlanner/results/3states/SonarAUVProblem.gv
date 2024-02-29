@@ -1,0 +1,18 @@
+strict digraph "" {
+	graph [fontname=helvetica];
+	node [fontname=helvetica,
+		label="\N",
+		shape=ellipse
+	];
+	edge [fontname=helvetica];
+	"(end)"	[label=end,
+		peripheries=2,
+		shape=circle];
+	"(obstacle-avoidance auv oilleakagepoint ssssonar0)" -> "(end)";
+	"(start)"	[label=start,
+		peripheries=1,
+		shape=circle];
+	"(waypoint-following auv initialpoint finalpoint ssssonar1 ssssonar0)"	[color=lightgrey,
+		style=filled];
+	"(start)" -> "(waypoint-following auv initialpoint finalpoint ssssonar1 ssssonar0)";
+}

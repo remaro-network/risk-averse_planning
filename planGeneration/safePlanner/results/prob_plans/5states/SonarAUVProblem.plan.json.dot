@@ -1,0 +1,20 @@
+digraph defaultname {
+	graph []
+	node []
+	edge []
+
+		subgraph cluster_main {
+			graph [color=black fillcolor=white label=main]
+			node [style=filled fillcolor=orange]
+			edge []
+				waypoint-following_auv_initialpoint_harmlesspoint_ssssonar1_ssssonar0 [label="waypoint-following_auv_initialpoint_harmlesspoint_ssssonar1_ssssonar0"]
+				waypoint-following_auv_harmlesspoint_oilleakagepoint_ssssonar1_ssssonar0 [label="waypoint-following_auv_harmlesspoint_oilleakagepoint_ssssonar1_ssssonar0"]
+				obstacle-avoidance_auv_oilleakagepoint_ssssonar0 [label="obstacle-avoidance_auv_oilleakagepoint_ssssonar0"]
+				waypoint-following_auv_oilleakagepoint_middlepoint_ssssonar1_ssssonar0 [label="waypoint-following_auv_oilleakagepoint_middlepoint_ssssonar1_ssssonar0"]
+				waypoint-following_auv_middlepoint_finalpoint_ssssonar1_ssssonar0 [label="waypoint-following_auv_middlepoint_finalpoint_ssssonar1_ssssonar0"]
+		}
+			waypoint-following_auv_initialpoint_harmlesspoint_ssssonar1_ssssonar0 -> waypoint-following_auv_harmlesspoint_oilleakagepoint_ssssonar1_ssssonar0
+			waypoint-following_auv_harmlesspoint_oilleakagepoint_ssssonar1_ssssonar0 -> obstacle-avoidance_auv_oilleakagepoint_ssssonar0
+			obstacle-avoidance_auv_oilleakagepoint_ssssonar0 -> waypoint-following_auv_oilleakagepoint_middlepoint_ssssonar1_ssssonar0
+			waypoint-following_auv_oilleakagepoint_middlepoint_ssssonar1_ssssonar0 -> waypoint-following_auv_middlepoint_finalpoint_ssssonar1_ssssonar0
+}

@@ -1,0 +1,18 @@
+strict digraph "" {
+	graph [fontname=helvetica];
+	node [fontname=helvetica,
+		label="\N",
+		shape=ellipse
+	];
+	edge [fontname=helvetica];
+	"(end)"	[label=end,
+		peripheries=2,
+		shape=circle];
+	"(take-photo auv photopoint rgbcamera)" -> "(end)";
+	"(start)"	[label=start,
+		peripheries=1,
+		shape=circle];
+	"(drive auv startpoint endpoint backthruster rgbcamera)"	[color=lightgrey,
+		style=filled];
+	"(start)" -> "(drive auv startpoint endpoint backthruster rgbcamera)";
+}

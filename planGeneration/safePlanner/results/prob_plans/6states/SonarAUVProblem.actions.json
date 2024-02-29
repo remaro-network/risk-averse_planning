@@ -1,0 +1,74 @@
+{
+    "waypoint-following_auv_initialpoint_middlepoint_ssssonar1_ssssonar0": {
+        "name": "waypoint-following",
+        "args": [
+            "auv",
+            "initialpoint",
+            "middlepoint",
+            "ssssonar1",
+            "ssssonar0"
+        ],
+        "pre": {},
+        "per": {
+            "at": [
+                "auv",
+                "initialpoint"
+            ]
+        },
+        "add": {},
+        "del": {}
+    },
+    "obstacle-avoidance_auv_middlepoint_ssssonar0": {
+        "name": "obstacle-avoidance",
+        "args": [
+            "auv",
+            "middlepoint",
+            "ssssonar0"
+        ],
+        "pre": {},
+        "per": {
+            "at": [
+                "auv",
+                "middlepoint"
+            ]
+        },
+        "add": {},
+        "del": {}
+    },
+    "waypoint-following_auv_middlepoint_oilleakagepoint_ssssonar1_ssssonar0": {
+        "name": "waypoint-following",
+        "args": [
+            "auv",
+            "middlepoint",
+            "oilleakagepoint",
+            "ssssonar1",
+            "ssssonar0"
+        ],
+        "pre": {},
+        "per": {
+            "at": [
+                "auv",
+                "middlepoint"
+            ]
+        },
+        "add": {},
+        "del": {}
+    },
+    "obstacle-avoidance_auv_oilleakagepoint_ssssonar0": {
+        "name": "obstacle-avoidance",
+        "args": [
+            "auv",
+            "oilleakagepoint",
+            "ssssonar0"
+        ],
+        "pre": {},
+        "per": {
+            "at": [
+                "auv",
+                "oilleakagepoint"
+            ]
+        },
+        "add": {},
+        "del": {}
+    }
+}

@@ -1,0 +1,18 @@
+{
+    "main": {
+        "list": [
+            "waypoint-following_auv_initialpoint_finalpoint_ssssonar1_ssssonar0",
+            "waypoint-following_auv_finalpoint_oilleakagepoint_ssssonar1_ssssonar0",
+            "obstacle-avoidance_auv_oilleakagepoint_ssssonar0",
+            "waypoint-following_auv_oilleakagepoint_initialpoint_ssssonar1_ssssonar0",
+            "waypoint-following_auv_initialpoint_finalpoint_ssssonar1_ssssonar0"
+        ],
+        "ordering": "total"
+    },
+    "actions": [
+        "waypoint-following_auv_initialpoint_finalpoint_ssssonar1_ssssonar0",
+        "waypoint-following_auv_finalpoint_oilleakagepoint_ssssonar1_ssssonar0",
+        "obstacle-avoidance_auv_oilleakagepoint_ssssonar0",
+        "waypoint-following_auv_oilleakagepoint_initialpoint_ssssonar1_ssssonar0"
+    ]
+}
