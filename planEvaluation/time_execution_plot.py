@@ -2,9 +2,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 # Given data
-planned_time = np.array([0.068, 0.094, 0.070, 0.073, 0.069])
-#dangerous
-#safest
+planned_time = np.array([3, 5, 6, 4, 5]) #dangerous, #safest, 
 
 simulated_time = np.array([
    [139.01 + 110 + 80 , 139.8 + 110.4 + 81.1, 138.9 + 115.5 + 82.1, 139.8 + 120.6 + 81, 137.7 + 111 + 80.4, \
