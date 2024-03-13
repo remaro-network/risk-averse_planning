@@ -1,0 +1,44 @@
+import numpy as np
+import matplotlib.pyplot as plt
+
+# Given data
+planned_time = np.array([0.068, 0.094, 0.070, 0.073, 0.059])
+
+simulated_time = np.array([
+   [0.14331142699666088, 0.1389527069986798, 0.13888138799666194, 0.13680089799890993, 0.1351598350011045, \
+      0.13972279599693138, 0.13315428599889856, 0.1329699259949848, 0.13537484799599042, 0.1322937400036608],
+   [0.14331142699666088, 0.1389527069986798, 0.13888138799666194, 0.13680089799890993, 0.1351598350011045,\
+      0.13972279599693138, 0.13315428599889856, 0.1329699259949848, 0.13537484799599042, 0.1322937400036608],
+       [0.14300714300043182, 0.13893251300032716, 0.13888539699837565, 0.13629262700123945, 0.13574092099588597, \
+        0.141435776000435, 0.13192472900118446, 0.13252787700184854, 0.13493526499951258, 0.13218432499706978],
+       [0.16210202599904733, 0.14289763000124367, 0.14297615800023777, 0.14406944700021995, 0.1437344320002012, \
+        0.15522328299994115, 0.1397918490038137, 0.14003397700435016, 0.13943566600210033, 0.13918662099604262],
+       [0.16210202599904733, 0.14289763000124367, 0.14297615800023777, 0.14406944700021995, 0.1437344320002012, \
+         0.15522328299994115, 0.1397918490038137, 0.14003397700435016, 0.13943566600210033, 0.13918662099604262]])
+
+# Calculate the mean and standard deviation for each plan's simulated times
+mean_simulated_time = np.mean(simulated_time, axis=1)
+std_dev_simulated_time = np.std(simulated_time, axis=1)
+
+# Plotting
+plt.figure(figsize=(6, 4))
+plt.errorbar(
+    planned_time, 
+    mean_simulated_time, yerr=std_dev_simulated_time, 
+    fmt='o', 
+    color = 'k',
+    ecolor='k', 
+    markersize = 3,
+    capsize=2, 
+    lw = 0.5, 
+    linestyle='None', 
+    label='Simulated Time')
+
+# Add x = y line
+plt.plot(planned_time, planned_time, 'k:', lw = 0.3, label='Expected Time')
+
+plt.xlabel('Expected Running Time for a Robot Plan')
+plt.ylabel('Simulated Running Time for a Robot Plan')
+plt.title('Scatter plot of Expected vs. Simulated Running Time')
+plt.legend()
+plt.show()
