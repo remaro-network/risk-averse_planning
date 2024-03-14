@@ -5,7 +5,7 @@ This repository is implementation of `Risk-averse Planning Framework for Marine 
 To see instruction go into planGeneration folder
 
 ### planEvaluation
-To see instruction go into planGeneration folder
+To see instruction go into planEvaluation folder
 
 #### Planner
 
@@ -16,11 +16,11 @@ Having executed the run_program inside `planGeneration`, Json file for possible 
 - system requirement: Refer to [Safe-Planner GitHub](https://github.com/mokhtarivahid/safe-planner)
 
 ### Plan Selection
-- Using Safe-Planner you can have all possible outcomes, we save the safest plan in graph dot, json, and PNG file. It possible to see other sub-plans in your /tmp folder
+- Using Risk-averse planner, you can have all possible outcomes; we save the safest plan in graph dot, json, and PNG file. It is also possible to see other sub-plans in your /tmp folder
 
 ### Plan Execution
 
-- To execute specific plan, you should download specific scenario from [remaro_scenarios GitHub](https://github.com/remaro-network/remaro_scenarios)
+- To execute specific plan, you should download specific scenario from [remaro_scenarios GitHub](https://github.com/remaro-network/remaro_scenarios). We support 5 different plans.
 
 ## Acknowledgements
 This project has received funding from the European Union’s Horizon 2020 research and innovation programme under the Marie Skłodowska-Curie grant agreement No. 956200.
