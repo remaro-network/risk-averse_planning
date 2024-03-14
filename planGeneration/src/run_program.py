@@ -72,7 +72,7 @@ if __name__ == "__main__":
    ############################# Default #####################################
    absolute_path = os.getcwd()
    plan_folder = "/plans/prob_plans/"
-   sub_plan_folder = "4states/"
+   sub_plan_folder = "6states/"
    result_folder = "/results/"
    domain_filename = "SonarAUVDomain.pddl"
    problem_filename = "SonarAUVProblem.pddl"

@@ -34,5 +34,79 @@
         },
         "add": {},
         "del": {}
+    },
+    "waypoint-following_auv_middlepoint_oilleakagepoint_ssssonar1_ssssonar0": {
+        "name": "waypoint-following",
+        "args": [
+            "auv",
+            "middlepoint",
+            "oilleakagepoint",
+            "ssssonar1",
+            "ssssonar0"
+        ],
+        "pre": {},
+        "per": {
+            "at": [
+                "auv",
+                "middlepoint"
+            ]
+        },
+        "add": {},
+        "del": {}
+    },
+    "obstacle-avoidance_auv_oilleakagepoint_ssssonar0": {
+        "name": "obstacle-avoidance",
+        "args": [
+            "auv",
+            "oilleakagepoint",
+            "ssssonar0"
+        ],
+        "pre": {},
+        "per": {
+            "at": [
+                "auv",
+                "oilleakagepoint"
+            ]
+        },
+        "add": {},
+        "del": {}
+    },
+    "waypoint-following_auv_oilleakagepoint_middletopoint_ssssonar1_ssssonar0": {
+        "name": "waypoint-following",
+        "args": [
+            "auv",
+            "oilleakagepoint",
+            "middletopoint",
+            "ssssonar1",
+            "ssssonar0"
+        ],
+        "pre": {},
+        "per": {
+            "at": [
+                "auv",
+                "oilleakagepoint"
+            ]
+        },
+        "add": {},
+        "del": {}
+    },
+    "waypoint-following_auv_middletopoint_finalpoint_ssssonar1_ssssonar0": {
+        "name": "waypoint-following",
+        "args": [
+            "auv",
+            "middletopoint",
+            "finalpoint",
+            "ssssonar1",
+            "ssssonar0"
+        ],
+        "pre": {},
+        "per": {
+            "at": [
+                "auv",
+                "middletopoint"
+            ]
+        },
+        "add": {},
+        "del": {}
     }
 }

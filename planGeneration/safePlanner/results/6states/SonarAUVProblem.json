@@ -54,7 +54,8 @@
         "outcomes": [
             {
                 "condition": [
-                    "(pipelineinspection middlepoint)"
+                    "(pipelineinspection middlepoint)",
+                    "(verticalinspection middlepoint)"
                 ],
                 "next": "step_2"
             },
@@ -66,41 +67,13 @@
             },
             {
                 "condition": [
-                    "(pipelineinspection middlepoint)",
-                    "(verticalinspection middlepoint)"
+                    "(pipelineinspection middlepoint)"
                 ],
                 "next": "step_4"
             }
         ]
     },
     "step_2": {
-        "actions": [
-            {
-                "name": "obstacle-avoidance",
-                "arguments": [
-                    "auv",
-                    "middlepoint",
-                    "ssssonar0"
-                ]
-            }
-        ],
-        "outcomes": [
-            {
-                "condition": [
-                    "(pipelineinspection middlepoint)"
-                ],
-                "next": "step_2"
-            },
-            {
-                "condition": [
-                    "(pipelineinspection middlepoint)",
-                    "(verticalinspection middlepoint)"
-                ],
-                "next": "step_4"
-            }
-        ]
-    },
-    "step_3": {
         "actions": [
             {
                 "name": "waypoint-following",
@@ -122,7 +95,7 @@
             }
         ]
     },
-    "step_4": {
+    "step_3": {
         "actions": [
             {
                 "name": "waypoint-following",
@@ -144,6 +117,32 @@
             }
         ]
     },
+    "step_4": {
+        "actions": [
+            {
+                "name": "obstacle-avoidance",
+                "arguments": [
+                    "auv",
+                    "middlepoint",
+                    "ssssonar0"
+                ]
+            }
+        ],
+        "outcomes": [
+            {
+                "condition": [
+                    "(verticalinspection middlepoint)"
+                ],
+                "next": "step_2"
+            },
+            {
+                "condition": [
+                    "(pipelineinspection middlepoint)"
+                ],
+                "next": "step_4"
+            }
+        ]
+    },
     "step_5": {
         "actions": [
             {
@@ -158,7 +157,8 @@
         "outcomes": [
             {
                 "condition": [
-                    "(pipelineinspection oilleakagepoint)"
+                    "(pipelineinspection oilleakagepoint)",
+                    "(verticalinspection oilleakagepoint)"
                 ],
                 "next": "step_7"
             },
@@ -170,8 +170,7 @@
             },
             {
                 "condition": [
-                    "(pipelineinspection oilleakagepoint)",
-                    "(verticalinspection oilleakagepoint)"
+                    "(pipelineinspection oilleakagepoint)"
                 ],
                 "next": "step_9"
             }
@@ -191,7 +190,8 @@
         "outcomes": [
             {
                 "condition": [
-                    "(pipelineinspection oilleakagepoint)"
+                    "(pipelineinspection oilleakagepoint)",
+                    "(verticalinspection oilleakagepoint)"
                 ],
                 "next": "step_10"
             },
@@ -203,8 +203,7 @@
             },
             {
                 "condition": [
-                    "(pipelineinspection oilleakagepoint)",
-                    "(verticalinspection oilleakagepoint)"
+                    "(pipelineinspection oilleakagepoint)"
                 ],
                 "next": "step_12"
             }
@@ -246,10 +245,9 @@
         "outcomes": [
             {
                 "condition": [
-                    "(pipelineinspection oilleakagepoint)",
-                    "(verticalinspection oilleakagepoint)"
+                    "(pipelineinspection oilleakagepoint)"
                 ],
-                "next": "step_9"
+                "next": "step_7"
             },
             {
                 "condition": [
@@ -266,7 +264,7 @@
                 "arguments": [
                     "auv",
                     "oilleakagepoint",
-                    "middletopoint",
+                    "initialpoint",
                     "ssssonar1",
                     "ssssonar0"
                 ]
@@ -275,7 +273,7 @@
         "outcomes": [
             {
                 "condition": [
-                    "(at auv middletopoint)"
+                    "(at auv initialpoint)"
                 ],
                 "next": "step_14"
             }
@@ -288,7 +286,7 @@
                 "arguments": [
                     "auv",
                     "oilleakagepoint",
-                    "initialpoint",
+                    "middletopoint",
                     "ssssonar1",
                     "ssssonar0"
                 ]
@@ -297,7 +295,7 @@
         "outcomes": [
             {
                 "condition": [
-                    "(at auv initialpoint)"
+                    "(at auv middletopoint)"
                 ],
                 "next": "step_15"
             }
@@ -317,10 +315,9 @@
         "outcomes": [
             {
                 "condition": [
-                    "(pipelineinspection oilleakagepoint)",
-                    "(verticalinspection oilleakagepoint)"
+                    "(pipelineinspection oilleakagepoint)"
                 ],
-                "next": "step_12"
+                "next": "step_10"
             },
             {
                 "condition": [
@@ -380,7 +377,7 @@
                 "name": "waypoint-following",
                 "arguments": [
                     "auv",
-                    "middletopoint",
+                    "initialpoint",
                     "finalpoint",
                     "ssssonar1",
                     "ssssonar0"
@@ -402,7 +399,7 @@
                 "name": "waypoint-following",
                 "arguments": [
                     "auv",
-                    "initialpoint",
+                    "middletopoint",
                     "finalpoint",
                     "ssssonar1",
                     "ssssonar0"

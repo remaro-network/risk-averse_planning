@@ -9,8 +9,8 @@ digraph Struc {
  n1 [label="(waypoint-following auv finalpoint oilleakagepoint ssssonar1 ssssonar0)"];
  n1->n2 [fontsize=12, label="+ (at auv oilleakagepoint)\n- (at auv finalpoint)"];
  n2 [style=filled, color=lightgrey, label="(obstacle-avoidance auv oilleakagepoint ssssonar0)"];
- n2->n2 [fontsize=12, label="+ (at auv oilleakagepoint)\n- (outofrangesonar0 ssssonar0)"];
  n2->n3 [fontsize=12, label="+ (pipelineinspection oilleakagepoint)"];
+ n2->n2 [fontsize=12, label="+ (at auv oilleakagepoint)\n- (outofrangesonar0 ssssonar0)"];
  n3 [label="(waypoint-following auv oilleakagepoint initialpoint ssssonar1 ssssonar0)"];
  n3->n4 [fontsize=12, label="+ (at auv initialpoint)\n- (at auv oilleakagepoint)"];
  n4 [label="(waypoint-following auv initialpoint finalpoint ssssonar1 ssssonar0)"];

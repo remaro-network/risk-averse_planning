@@ -1,8 +1,8 @@
 {
-    "planning_time": 0.096,
+    "planning_time": 0.147,
     "compilation_time": 0.007,
-    "planning_call_singlesoutcome": 6,
-    "planning_call_alloutcome": 6,
+    "planning_call_singlesoutcome": 9,
+    "planning_call_alloutcome": 9,
     "unsolvable_states": 1,
     "solvable": true,
     "policy_length": 17,

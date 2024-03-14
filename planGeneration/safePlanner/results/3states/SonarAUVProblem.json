@@ -64,15 +64,15 @@
         "outcomes": [
             {
                 "condition": [
-                    "(at auv oilleakagepoint)"
-                ],
-                "next": "step_2"
-            },
-            {
-                "condition": [
                     "(pipelineinspection oilleakagepoint)"
                 ],
                 "next": "step_3"
+            },
+            {
+                "condition": [
+                    "(at auv oilleakagepoint)"
+                ],
+                "next": "step_2"
             }
         ]
     },

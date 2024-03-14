@@ -53,5 +53,24 @@
         },
         "add": {},
         "del": {}
+    },
+    "waypoint-following_auv_oilleakagepoint_initialpoint_ssssonar1_ssssonar0": {
+        "name": "waypoint-following",
+        "args": [
+            "auv",
+            "oilleakagepoint",
+            "initialpoint",
+            "ssssonar1",
+            "ssssonar0"
+        ],
+        "pre": {},
+        "per": {
+            "at": [
+                "auv",
+                "oilleakagepoint"
+            ]
+        },
+        "add": {},
+        "del": {}
     }
 }

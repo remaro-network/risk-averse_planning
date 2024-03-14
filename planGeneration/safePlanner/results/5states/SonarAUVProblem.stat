@@ -1,6 +1,6 @@
 {
-    "planning_time": 0.106,
-    "compilation_time": 0.007,
+    "planning_time": 0.108,
+    "compilation_time": 0.006,
     "planning_call_singlesoutcome": 7,
     "planning_call_alloutcome": 7,
     "unsolvable_states": 2,
